@@ -79,18 +79,6 @@
       width: 0%;
     }
 
-    /* ========== BACK LINK ========== */
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.85rem;
-      color: #555;
-      padding: 24px 0 0;
-      transition: color 0.2s ease;
-    }
-    .back-link:hover { color: #C9A84C; }
-
     /* ========== UNLOCK HERO ========== */
     .unlock-hero {
       padding: 100px 20px 80px;
@@ -383,6 +371,43 @@
       }
     }
 
+    /* ========== TESTIMONIAL STRIP ========== */
+    .testimonial-strip {
+      display: grid;
+      gap: 16px;
+      margin: 48px 0 0;
+    }
+    .testimonial-item {
+      background: #141414;
+      border: 1px solid #2a2a2a;
+      border-radius: 2px;
+      padding: 24px 28px;
+      position: relative;
+    }
+    .testimonial-item::before {
+      content: '\201C';
+      position: absolute;
+      top: 12px;
+      left: 16px;
+      font-size: 2rem;
+      color: rgba(201, 168, 76, 0.2);
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+    .testimonial-quote {
+      color: #999;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 12px;
+      padding-left: 20px;
+    }
+    .testimonial-attr {
+      font-size: 0.8rem;
+      color: #555;
+      padding-left: 20px;
+    }
+    .testimonial-attr strong { color: #666; }
+
     /* ========== CTA SECTION ========== */
     .cta-section {
       text-align: center;
@@ -449,10 +474,10 @@
     }
     .cta-proof-item strong { color: #999; }
 
-    .cta-note {
+    .cta-anxiety {
       font-size: 0.85rem;
       color: #555;
-      margin-top: 24px;
+      margin-top: 16px;
     }
 
     .cta-next {
@@ -505,15 +530,6 @@
       .btn { display: block; width: 100%; }
     }
 
-    .secondary-link {
-      display: inline-block;
-      margin-top: 16px;
-      font-size: 0.9rem;
-      color: #555;
-      transition: color 0.2s ease;
-    }
-    .secondary-link:hover { color: #C9A84C; }
-
     /* ========== PRIDE CLOSE ========== */
     .pride-close {
       padding: 64px 20px;
@@ -549,6 +565,38 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    /* ========== STICKY CTA (mobile) ========== */
+    .sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      background: rgba(10, 10, 10, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(201, 168, 76, 0.15);
+      padding: 12px 20px;
+      text-align: center;
+    }
+    .sticky-cta.visible { display: block; }
+    .sticky-cta a {
+      display: block;
+      width: 100%;
+      padding: 16px 24px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #0a0a0a;
+      background: #C9A84C;
+      border-radius: 2px;
+      text-decoration: none;
+    }
+    @media (min-width: 601px) {
+      .sticky-cta { display: none !important; }
+    }
   </style>
 </head>
 <body>
@@ -556,21 +604,17 @@
   <!-- Progress bar -->
   <div class="progress-bar" id="progress-bar"></div>
 
-  <div class="container">
-    <a href="index.html" class="back-link">&larr; Back to Plumbing Valuation Guide</a>
-  </div>
-
   <!-- ==================== UNLOCK HERO ==================== -->
   <section class="unlock-hero">
     <div class="unlock-icon">&#10003;</div>
-    <div class="unlock-badge">Your Training Is Ready</div>
+    <div class="unlock-badge">Your Guide Is Ready</div>
     <h1>3 Steps to Increase Your Plumbing Business Value <span>Before You Sell</span></h1>
     <p class="subtitle">Real math. Plumbing-specific case studies. The exact checklist PE buyers use to evaluate your company - and how to score higher on every factor.</p>
 
     <div class="hero-proof-bar">
       <span class="hero-proof-item"><strong>5,000+</strong> owners trained</span>
-      <span class="hero-proof-item"><strong>$2.4M</strong> avg. value increase</span>
-      <span class="hero-proof-item"><strong>15 min</strong> to read</span>
+      <span class="hero-proof-item"><strong>15 min</strong> read</span>
+      <span class="hero-proof-item"><strong>Owners report 1-2x</strong> multiple increases</span>
     </div>
 
     <div class="personalization" id="personalization">
@@ -770,33 +814,55 @@
 
   <hr class="divider-gradient">
 
+  <!-- ==================== SOCIAL PROOF BRIDGE ==================== -->
+  <section class="section">
+    <div class="container">
+      <div class="testimonial-strip reveal">
+        <div class="testimonial-item">
+          <p class="testimonial-quote">I had no idea recurring revenue would change my multiple that much. We added maintenance contracts and went from a 4.2x to a 5.8x offer in under 14 months.</p>
+          <p class="testimonial-attr"><strong>Plumbing company owner</strong> - TX, $7.2M revenue</p>
+        </div>
+        <div class="testimonial-item">
+          <p class="testimonial-quote">The owner dependency checklist was a wake-up call. I thought I was delegating. I wasn't. Took 10 months but my ops manager now runs the day-to-day completely.</p>
+          <p class="testimonial-attr"><strong>Plumbing company owner</strong> - FL, $4.8M revenue</p>
+        </div>
+        <div class="testimonial-item">
+          <p class="testimonial-quote">Used the buyer's scorecard to identify our weak spots before going to market. Fixed two red flags. The PE firm that acquired us said our documentation was the best they'd seen.</p>
+          <p class="testimonial-attr"><strong>Plumbing company owner</strong> - OH, $11M revenue</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider-gradient">
+
   <!-- ==================== CTA ==================== -->
-  <section class="cta-section">
+  <section class="cta-section" id="get-scorecard">
     <div class="container">
       <div class="cta-inner reveal">
-        <h2>You Know the Framework.<br><span>Now Get Your Personalized Score.</span></h2>
-        <p style="max-width: 500px; margin: 0 auto; font-size: 1.05rem; line-height: 1.6;">Take the 5-minute assessment to see exactly where your plumbing company stands across all six buyer criteria - with specific recommendations for your revenue size and service mix.</p>
+        <h2>You've Built Something Valuable.<br><span>Now See Exactly What It's Worth to Buyers.</span></h2>
+        <p style="max-width: 500px; margin: 0 auto; font-size: 1.05rem; line-height: 1.6;">Take the 5-minute assessment to see where your plumbing company stands across all six buyer criteria - with specific recommendations for your revenue size and service mix.</p>
 
         <div class="cta-proof-strip">
           <span class="cta-proof-item"><strong>5,000+</strong> owners assessed</span>
           <span class="cta-proof-item"><strong>5 minutes</strong> to complete</span>
-          <span class="cta-proof-item"><strong>Free</strong> - no strings</span>
+          <span class="cta-proof-item"><strong>Free</strong> - no strings attached</span>
         </div>
 
         <div>
           <a href="https://thearenapartners.com/assessment.html" class="btn btn-gold">Get My Personalized Scorecard &rarr;</a>
         </div>
 
+        <p class="cta-anxiety">No sales pitch. No phone call. Just your score and what to do about it.</p>
+
         <div class="cta-next">
           <p class="cta-next-title">What happens next</p>
           <div class="cta-next-steps">
-            <span class="cta-next-step"><strong>1.</strong> Answer 6 questions</span>
-            <span class="cta-next-step"><strong>2.</strong> Get your score instantly</span>
+            <span class="cta-next-step"><strong>1.</strong> Answer 6 questions about your business</span>
+            <span class="cta-next-step"><strong>2.</strong> Get your score instantly on screen</span>
             <span class="cta-next-step"><strong>3.</strong> See exactly what to fix first</span>
           </div>
         </div>
-
-        <p class="cta-note">Or if you already know your score and want to talk strategy:<br><a href="https://thearenapartners.com/book.html" class="secondary-link">Book a free 15-minute call with an advisor &rarr;</a></p>
       </div>
     </div>
   </section>
@@ -813,12 +879,17 @@
     <div class="container">
       <div class="footer-links">
         <a href="https://thearenapartners.com">The Arena Partners</a>
-        <a href="index.html">Plumbing Valuation Guide</a>
+        <a href="index.html">Valuation Guide</a>
         <a href="https://thearenapartners.com/privacy">Privacy</a>
       </div>
       <p>&copy; 2026 The Arena Partners. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Sticky CTA (mobile only) -->
+  <div class="sticky-cta" id="sticky-cta">
+    <a href="#get-scorecard">Get My Personalized Scorecard &rarr;</a>
+  </div>
 
   <script>
     // Personalization from URL params
@@ -875,6 +946,22 @@
         });
       }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
       els.forEach(function(el) { observer.observe(el); });
+    })();
+
+    // Sticky CTA (show after scrolling past hero on mobile)
+    (function() {
+      var sticky = document.getElementById('sticky-cta');
+      var ctaSection = document.getElementById('get-scorecard');
+      window.addEventListener('scroll', function() {
+        var scrollY = window.scrollY;
+        var ctaTop = ctaSection.getBoundingClientRect().top + window.scrollY;
+        var heroHeight = window.innerHeight;
+        if (scrollY > heroHeight && scrollY < ctaTop - window.innerHeight * 0.5) {
+          sticky.classList.add('visible');
+        } else {
+          sticky.classList.remove('visible');
+        }
+      });
     })();
   </script>
 

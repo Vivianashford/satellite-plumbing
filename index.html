@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What Is My Plumbing Business Worth? | Free Valuation Guide</title>
-  <meta name="description" content="Find out what your plumbing business is really worth. Plumbing-specific EBITDA multiples (4-7x), real buyer math, and a free training to increase your exit price before you sell.">
-  <meta name="keywords" content="sell plumbing business, sell my plumbing company, how to sell a plumbing business, how much is a plumbing business worth, plumbing company valuation, plumbing business value, plumbing EBITDA multiple">
+  <title>What Is My Plumbing Business Worth? | Free Valuation Calculator</title>
+  <meta name="description" content="Find out what your plumbing business is really worth. Plumbing-specific EBITDA multiples, real PE buyer math, and a free interactive calculator to estimate your exit price.">
+  <meta name="keywords" content="plumbing business valuation, what is my plumbing business worth, sell plumbing company, plumbing EBITDA multiple, plumbing company exit, plumbing business worth calculator">
   <link rel="canonical" href="https://vivianashford.github.io/satellite-plumbing/">
 
   <!-- Open Graph -->
   <meta property="og:title" content="What Is Your Plumbing Business Actually Worth?">
-  <meta property="og:description" content="The average plumbing company sells for 4-7x EBITDA. But 73% of owners leave $500K-$2M on the table. Here's why - and how to fix it.">
+  <meta property="og:description" content="Most plumbing company owners overestimate by 40%. Here's how PE buyers really calculate your exit price - and a free calculator to see your number.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vivianashford.github.io/satellite-plumbing/">
   <meta property="og:site_name" content="The Arena Partners">
@@ -18,14 +18,14 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="What Is Your Plumbing Business Actually Worth?">
-  <meta name="twitter:description" content="The average plumbing company sells for 4-7x EBITDA. But 73% of owners leave $500K-$2M on the table.">
+  <meta name="twitter:description" content="Most plumbing company owners overestimate by 40%. Here's how PE buyers really calculate your exit price.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 
-  <!-- Schema.org - WebSite -->
+  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -39,8 +39,6 @@
     }
   }
   </script>
-
-  <!-- Schema.org - FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -48,26 +46,26 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How much is a plumbing business worth?",
+        "name": "What is my plumbing business worth?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Plumbing business valuations are based on Adjusted EBITDA multiplied by an industry-specific multiple. Solo operators typically sell for 2-3x EBITDA, companies with $1-3M revenue for 3-5x, $3-5M revenue for 4-6x, $5-10M revenue for 5-7x, and $10M+ with recurring service agreements for 6-8x. Key value drivers include recurring maintenance contracts, multiple trucks, licensed technicians, documented SOPs, and low owner dependency."
+          "text": "Plumbing business valuations are based on Adjusted EBITDA multiplied by a plumbing-specific multiple. Companies under $1M revenue typically sell for 2-3x EBITDA, $1-3M for 3-4.5x, $3-5M for 4-5.5x, $5-10M for 5-7x, and $10M+ for 6-8x. Adjustments depend on service agreements, owner dependency, licensed technicians, and specialization."
         }
       },
       {
         "@type": "Question",
-        "name": "How do I sell my plumbing business?",
+        "name": "How do PE buyers value plumbing companies?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "To sell a plumbing business for maximum value, focus on three areas: shift revenue from one-time projects to recurring service agreements, reduce owner dependency by building a management team and documenting processes, and prepare buyer-ready documentation including clean financials, customer contracts, and employee certifications. Most successful exits require 12-18 months of preparation."
+          "text": "PE buyers use three numbers: your adjusted EBITDA, a plumbing-specific multiple based on revenue tier, and risk adjustments for service agreement revenue, owner dependency, licensed technician count, and commercial vs residential mix."
         }
       },
       {
         "@type": "Question",
-        "name": "Why are private equity firms buying plumbing companies?",
+        "name": "Why do plumbing companies with service agreements sell for more?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Private equity firms like Wrench Group, Apex Service Partners, and Redwood Services are actively acquiring plumbing companies because the market is highly fragmented, plumbing is an essential service with recurring revenue potential, aging infrastructure drives steady demand, and companies can be consolidated for higher multiples. PE firms typically hold for 3-5 years then sell at a higher multiple to a larger buyer."
+          "text": "Service agreements represent predictable, recurring revenue. Plumbing companies with 30%+ of revenue from maintenance contracts can command 1.0x or more in additional multiple versus companies with little recurring revenue. Buyers pay more for predictability."
         }
       }
     ]
@@ -82,1056 +80,291 @@
     gtag('js', new Date());
     gtag('config', 'G-SDMM90P63D');
   </script>
-
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { font-size: 16px; scroll-behavior: smooth; }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #0a0a0a;
-      color: #f0f0f0;
-      line-height: 1.75;
-      font-size: 17px;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      overflow-x: hidden;
-    }
-    a { color: #C9A84C; text-decoration: none; transition: color 0.2s ease; }
-    a:hover { color: #D4B65C; }
-
-    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
-    @media (max-width: 600px) { .container { padding: 0 20px; } }
-
-    /* ========== HERO ========== */
-    .hero {
-      min-height: 100vh;
-      min-height: 100svh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 80px 20px 60px;
-      position: relative;
-    }
-    .hero-eyebrow {
-      font-family: 'Inter', sans-serif;
-      font-weight: 600;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: #C9A84C;
-      margin-bottom: 32px;
-      opacity: 0;
-      animation: fadeUp 0.8s ease 0.2s forwards;
-    }
-    .hero h1 {
-      font-family: 'Inter', sans-serif;
-      font-weight: 900;
-      font-size: clamp(2.6rem, 7vw, 4.2rem);
-      line-height: 1.08;
-      letter-spacing: -0.04em;
-      color: #f0f0f0;
-      margin-bottom: 28px;
-      max-width: 680px;
-      opacity: 0;
-      animation: fadeUp 0.8s ease 0.4s forwards;
-    }
-    .hero h1 span { color: #C9A84C; }
-    .hero-sub {
-      font-family: 'Inter', sans-serif;
-      font-weight: 400;
-      font-size: clamp(1.05rem, 2.5vw, 1.25rem);
-      color: #999;
-      line-height: 1.6;
-      max-width: 520px;
-      margin: 0 auto 40px;
-      opacity: 0;
-      animation: fadeUp 0.8s ease 0.6s forwards;
-    }
-    .hero-cta {
-      display: inline-block;
-      padding: 18px 40px;
-      font-family: 'Inter', sans-serif;
-      font-size: 1rem;
-      font-weight: 700;
-      color: #0a0a0a;
-      background: #C9A84C;
-      border-radius: 2px;
-      border: none;
-      cursor: pointer;
-      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease;
-      text-decoration: none;
-      opacity: 0;
-      animation: fadeUp 0.8s ease 0.8s forwards;
-    }
-    .hero-cta:hover {
-      background: #D4B65C;
-      color: #0a0a0a;
-      transform: translateY(-1px);
-      box-shadow: 0 12px 40px rgba(201, 168, 76, 0.15);
-    }
-    .hero-proof {
-      margin-top: 20px;
-      font-size: 0.85rem;
-      color: #666;
-      opacity: 0;
-      animation: fadeUp 0.8s ease 1.0s forwards;
-    }
-    .hero-proof strong { color: #999; }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(16px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ========== SECTIONS ========== */
-    .section { padding: 80px 0; }
-    @media (max-width: 600px) { .section { padding: 48px 0; } }
-
-    .section-label {
-      font-family: 'Inter', sans-serif;
-      font-weight: 600;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: #C9A84C;
-      margin-bottom: 20px;
-      display: block;
-    }
-    .section-title {
-      font-family: 'Inter', sans-serif;
-      font-weight: 800;
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
-      line-height: 1.12;
-      letter-spacing: -0.035em;
-      color: #f0f0f0;
-      margin-bottom: 20px;
-    }
-    .section-intro {
-      font-size: 1.05rem;
-      color: #999;
-      max-width: 560px;
-      line-height: 1.7;
-      margin-bottom: 48px;
-    }
-
-    .divider-gradient {
-      height: 1px;
-      border: none;
-      margin: 0;
-      background: linear-gradient(90deg, transparent, #2a2a2a 20%, #2a2a2a 80%, transparent);
-    }
-
-    /* ========== STAT BLOCKS ========== */
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin: 48px 0;
-    }
-    .stat-block {
-      background: #1a1a1a;
-      border: 1px solid #2a2a2a;
-      border-radius: 2px;
-      padding: 32px 20px;
-      text-align: center;
-    }
-    .stat-number {
-      font-family: 'JetBrains Mono', monospace;
-      font-weight: 500;
-      font-size: clamp(1.8rem, 4vw, 2.4rem);
-      color: #C9A84C;
-      line-height: 1.1;
-      margin-bottom: 8px;
-    }
-    .stat-label {
-      font-family: 'Inter', sans-serif;
-      font-weight: 600;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #666;
-    }
-    @media (max-width: 600px) {
-      .stats-grid { grid-template-columns: 1fr; }
-    }
-
-    /* ========== CARDS ========== */
-    .card {
-      background: #1a1a1a;
-      border: 1px solid #2a2a2a;
-      border-radius: 2px;
-      padding: 32px;
-      margin-bottom: 20px;
-      transition: border-color 0.2s ease;
-    }
-    .card-elevated {
-      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3), 0 1px 4px rgba(0, 0, 0, 0.2);
-    }
-    .card-gold {
-      border-color: rgba(201, 168, 76, 0.2);
-      background: linear-gradient(180deg, rgba(201, 168, 76, 0.03) 0%, #1a1a1a 100%);
-    }
-    .card h3 {
-      font-family: 'Inter', sans-serif;
-      font-weight: 700;
-      font-size: 1.25rem;
-      letter-spacing: -0.02em;
-      color: #f0f0f0;
-      margin-bottom: 16px;
-      line-height: 1.3;
-    }
-    .card p { color: #999; margin-bottom: 16px; }
-    .card p:last-child { margin-bottom: 0; }
-    @media (max-width: 600px) { .card { padding: 24px; } }
-
-    /* ========== DATA TABLE ========== */
-    .table-wrap {
-      margin: 28px 0;
-      border: 1px solid #2a2a2a;
-      border-radius: 2px;
-      overflow: hidden;
-    }
-    .data-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    .data-table th {
-      font-family: 'Inter', sans-serif;
-      font-weight: 600;
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #666;
-      background: #111;
-      padding: 14px 16px;
-      text-align: left;
-      border-bottom: 1px solid #2a2a2a;
-    }
-    .data-table td {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.95rem;
-      color: #f0f0f0;
-      padding: 14px 16px;
-      border-bottom: 1px solid rgba(42, 42, 42, 0.5);
-    }
-    .data-table tbody tr:nth-child(odd) { background: #141414; }
-    .data-table tbody tr:nth-child(even) { background: #1a1a1a; }
-    .data-table tbody tr:last-child td { border-bottom: none; }
-    .data-table .mono {
-      font-family: 'JetBrains Mono', monospace;
-      font-weight: 500;
-    }
-    .data-table .text-green { color: #34C759; }
-    @media (max-width: 600px) {
-      .data-table th, .data-table td { padding: 12px 10px; font-size: 0.85rem; }
-      .data-table th { font-size: 9px; }
-    }
-    .table-source {
-      font-size: 0.8rem;
-      color: #666;
-      margin-top: 12px;
-      line-height: 1.5;
-    }
-
-    /* ========== MATH BLOCK ========== */
-    .math-block {
-      background: #111;
-      border: 1px solid #2a2a2a;
-      border-radius: 2px;
-      padding: 28px;
-      margin: 24px 0;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.88rem;
-      font-weight: 500;
-      line-height: 2.1;
-      color: #999;
-    }
-    .math-block .result { color: #34C759; font-size: 0.95rem; }
-    .math-block .loss { color: #FF3B30; }
-    .math-block .highlight { color: #f0f0f0; font-weight: 500; }
-
-    /* ========== CHECKLIST ========== */
-    .check-list { list-style: none; padding: 0; }
-    .check-list li {
-      padding: 16px 0 16px 40px;
-      position: relative;
-      border-bottom: 1px solid rgba(42, 42, 42, 0.6);
-      color: #f0f0f0;
-      font-size: 1rem;
-      line-height: 1.65;
-    }
-    .check-list li:last-child { border-bottom: none; }
-    .check-list li::before {
-      content: '\2713';
-      position: absolute;
-      left: 0;
-      top: 16px;
-      color: #C9A84C;
-      font-weight: 700;
-      font-size: 1rem;
-    }
-    .check-list li strong { color: #f0f0f0; }
-    .check-list li span { color: #666; }
-
-    /* ========== X LIST (kills) ========== */
-    .x-list { list-style: none; padding: 0; }
-    .x-list li {
-      padding: 16px 0 16px 40px;
-      position: relative;
-      border-bottom: 1px solid rgba(42, 42, 42, 0.6);
-      color: #f0f0f0;
-      font-size: 1rem;
-      line-height: 1.65;
-    }
-    .x-list li:last-child { border-bottom: none; }
-    .x-list li::before {
-      content: '\2717';
-      position: absolute;
-      left: 0;
-      top: 16px;
-      color: #FF3B30;
-      font-weight: 700;
-      font-size: 1rem;
-    }
-    .x-list li strong { color: #f0f0f0; }
-    .x-list li span { color: #666; }
-
-    /* ========== NUMBERED LIST ========== */
-    .numbered-list { list-style: none; padding: 0; counter-reset: step; }
-    .numbered-list li {
-      padding: 24px 0 24px 60px;
-      position: relative;
-      border-bottom: 1px solid rgba(42, 42, 42, 0.6);
-      counter-increment: step;
-    }
-    .numbered-list li:last-child { border-bottom: none; }
-    .numbered-list li::before {
-      content: counter(step);
-      position: absolute;
-      left: 0;
-      top: 24px;
-      width: 40px;
-      height: 40px;
-      background: rgba(201, 168, 76, 0.08);
-      border: 1px solid rgba(201, 168, 76, 0.15);
-      color: #C9A84C;
-      font-family: 'JetBrains Mono', monospace;
-      font-weight: 500;
-      font-size: 0.85rem;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .numbered-list li strong { color: #f0f0f0; display: block; margin-bottom: 4px; }
-    .numbered-list li span { color: #666; font-size: 0.95rem; }
-
-    /* ========== FORM SECTION ========== */
-    .form-section {
-      padding: 100px 0 80px;
-      position: relative;
-    }
-    .form-section::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: radial-gradient(ellipse at 50% 0%, rgba(201, 168, 76, 0.03) 0%, transparent 60%);
-      pointer-events: none;
-    }
-    @media (max-width: 600px) { .form-section { padding: 64px 0 48px; } }
-
-    .form-header {
-      text-align: center;
-      margin-bottom: 48px;
-    }
-    .form-header-label {
-      font-family: 'Inter', sans-serif;
-      font-weight: 600;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: #C9A84C;
-      margin-bottom: 20px;
-      display: block;
-    }
-    .form-header h2 {
-      font-family: 'Inter', sans-serif;
-      font-weight: 800;
-      font-size: clamp(1.8rem, 4vw, 2.4rem);
-      letter-spacing: -0.035em;
-      line-height: 1.15;
-      color: #f0f0f0;
-      margin-bottom: 16px;
-    }
-    .form-header p {
-      font-size: 1.05rem;
-      color: #999;
-      max-width: 460px;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-
-    .objection-strip {
-      max-width: 480px;
-      margin: 0 auto 24px;
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-    .objection-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.82rem;
-      color: #666;
-    }
-    .objection-item .icon { color: #34C759; font-size: 0.9rem; }
-
-    .form-box {
-      background: #1a1a1a;
-      border: 1px solid rgba(201, 168, 76, 0.12);
-      border-radius: 2px;
-      padding: 48px 40px;
-      max-width: 480px;
-      margin: 0 auto;
-      position: relative;
-      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.2);
-    }
-    .form-box::before {
-      content: '';
-      position: absolute;
-      top: -1px;
-      left: 40px;
-      right: 40px;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.35), transparent);
-    }
-    @media (max-width: 600px) {
-      .form-box { padding: 32px 20px; }
-      .form-box::before { left: 20px; right: 20px; }
-    }
-
-    .form-group { margin-bottom: 20px; }
-    .form-label {
-      display: block;
-      font-family: 'Inter', sans-serif;
-      font-weight: 600;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #999;
-      margin-bottom: 8px;
-    }
-    .form-input,
-    .form-select {
-      width: 100%;
-      min-height: 50px;
-      padding: 14px 16px;
-      font-family: 'Inter', sans-serif;
-      font-size: 17px;
-      color: #f0f0f0;
-      background: #111;
-      border: 1px solid #2a2a2a;
-      border-radius: 2px;
-      outline: none;
-      transition: border-color 0.25s ease, box-shadow 0.25s ease;
-      -webkit-appearance: none;
-      appearance: none;
-    }
-    .form-input:focus,
-    .form-select:focus {
-      border-color: #C9A84C;
-      box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.08);
-    }
-    .form-input::placeholder { color: #555; }
-    .form-select {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 16px center;
-      padding-right: 40px;
-    }
-    .form-select option { background: #141414; color: #f0f0f0; }
-
-    .form-submit {
-      width: 100%;
-      min-height: 56px;
-      padding: 18px 32px;
-      margin-top: 12px;
-      font-family: 'Inter', sans-serif;
-      font-size: 1.05rem;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-      color: #0a0a0a;
-      background: #C9A84C;
-      border: none;
-      border-radius: 2px;
-      cursor: pointer;
-      transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
-    }
-    .form-submit:hover {
-      background: #D4B65C;
-      transform: translateY(-1px);
-      box-shadow: 0 12px 40px rgba(201, 168, 76, 0.15);
-    }
-    .form-submit:active { transform: translateY(0); }
-
-    .form-micro {
-      text-align: center;
-      color: #555;
-      font-size: 0.8rem;
-      margin-top: 16px;
-      line-height: 1.5;
-    }
-    .form-micro .lock-icon {
-      display: inline-block;
-      margin-right: 4px;
-      font-size: 0.75rem;
-    }
-
-    .form-hint {
-      font-size: 0.78rem;
-      color: #555;
-      margin-top: 6px;
-      line-height: 1.4;
-    }
-
-    .form-proof {
-      text-align: center;
-      color: #999;
-      font-size: 0.85rem;
-      margin-top: 24px;
-      letter-spacing: 0.01em;
-      padding-top: 20px;
-      border-top: 1px solid #2a2a2a;
-    }
-    .form-proof strong { color: #C9A84C; }
-
-    .next-steps {
-      max-width: 480px;
-      margin: 28px auto 0;
-      text-align: center;
-    }
-    .next-steps-title {
-      font-family: 'Inter', sans-serif;
-      font-weight: 600;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: #666;
-      margin-bottom: 16px;
-    }
-    .next-steps-list {
-      display: flex;
-      justify-content: center;
-      gap: 32px;
-      flex-wrap: wrap;
-    }
-    .next-step {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.85rem;
-      color: #666;
-    }
-    .next-step .num {
-      width: 24px;
-      height: 24px;
-      background: rgba(201, 168, 76, 0.08);
-      border: 1px solid rgba(201, 168, 76, 0.15);
-      color: #C9A84C;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.7rem;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    /* ========== PRIDE CLOSE ========== */
-    .pride-close {
-      padding: 64px 20px;
-      text-align: center;
-    }
-    .pride-close p {
-      color: #555;
-      font-size: 1.1rem;
-      font-style: italic;
-      letter-spacing: -0.01em;
-      font-weight: 400;
-    }
-
-    /* ========== FOOTER ========== */
-    footer {
-      padding: 48px 20px;
-      text-align: center;
-      color: #555;
-      font-size: 0.8rem;
-      border-top: 1px solid #2a2a2a;
-    }
-    footer a { color: #555; transition: color 0.2s ease; }
-    footer a:hover { color: #C9A84C; }
-    .footer-links { margin-bottom: 16px; }
-    .footer-links a { margin: 0 16px; }
-
-    /* ========== SCROLL REVEALS ========== */
-    .reveal {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* ========== CTA INLINE ========== */
-    .cta-inline {
-      text-align: center;
-      margin: 48px 0 0;
-    }
-    .cta-inline a {
-      display: inline-block;
-      padding: 18px 40px;
-      font-family: 'Inter', sans-serif;
-      font-size: 1rem;
-      font-weight: 700;
-      color: #0a0a0a;
-      background: #C9A84C;
-      border-radius: 2px;
-      transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
-    }
-    .cta-inline a:hover {
-      background: #D4B65C;
-      color: #0a0a0a;
-      transform: translateY(-1px);
-      box-shadow: 0 12px 40px rgba(201, 168, 76, 0.15);
-    }
-    .cta-inline-proof {
-      margin-top: 12px;
-      font-size: 0.82rem;
-      color: #555;
-    }
-    @media (max-width: 600px) {
-      .cta-inline a { display: block; width: 100%; }
-    }
-
-    /* ========== STICKY CTA (mobile) ========== */
-    .sticky-cta {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 999;
-      background: rgba(10, 10, 10, 0.95);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-top: 1px solid rgba(201, 168, 76, 0.15);
-      padding: 12px 20px;
-      text-align: center;
-    }
-    .sticky-cta.visible { display: block; }
-    .sticky-cta a {
-      display: block;
-      width: 100%;
-      padding: 16px 24px;
-      font-family: 'Inter', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: #0a0a0a;
-      background: #C9A84C;
-      border-radius: 2px;
-      text-decoration: none;
-    }
-    @media (min-width: 601px) {
-      .sticky-cta { display: none !important; }
-    }
-  </style>
 </head>
-<body>
+<body style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #f0f0f0; line-height: 1.75; font-size: 17px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; margin: 0; padding: 0; overflow-x: hidden;">
 
   <!-- ==================== HERO ==================== -->
-  <section class="hero">
-    <div class="hero-eyebrow">For Plumbing Business Owners Doing $1M-$50M</div>
-    <h1>What Is Your Plumbing Business <span>Actually Worth?</span></h1>
-    <p class="hero-sub">The average plumbing company sells for 4-7x EBITDA. But 73% of owners leave $500K-$2M on the table. Here's why.</p>
-    <a href="#get-training" class="hero-cta">Get My Free Valuation Guide &rarr;</a>
-    <p class="hero-proof"><strong>5,000+</strong> service business owners have used this guide to plan their exit</p>
+  <section style="min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 80px 20px 60px; position: relative;">
+    <div style="font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: #C9A84C; margin-bottom: 32px; opacity: 0; animation: fadeUp 0.8s ease 0.2s forwards;">For Plumbing Business Owners Doing $1M-$50M</div>
+    <h1 style="font-weight: 900; font-size: clamp(2.6rem, 7vw, 4.2rem); line-height: 1.08; letter-spacing: -0.04em; color: #f0f0f0; margin: 0 0 28px; max-width: 700px; opacity: 0; animation: fadeUp 0.8s ease 0.4s forwards;">What Is Your Plumbing<br>Business <span style="color: #C9A84C;">Actually Worth?</span></h1>
+    <p style="font-weight: 400; font-size: clamp(1.05rem, 2.5vw, 1.25rem); color: #999; line-height: 1.6; max-width: 500px; margin: 0 auto 40px; opacity: 0; animation: fadeUp 0.8s ease 0.6s forwards;">73% of owners get a lower offer than expected. Learn the exact formula PE buyers use - then calculate your number for free.</p>
+    <a href="#get-calculator" style="display: inline-block; padding: 18px 40px; font-size: 1rem; font-weight: 700; color: #0a0a0a; background: #C9A84C; border-radius: 2px; text-decoration: none; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease; opacity: 0; animation: fadeUp 0.8s ease 0.8s forwards; cursor: pointer;" onmouseover="this.style.background='#D4B65C'; this.style.transform='translateY(-1px)'; this.style.boxShadow='0 12px 40px rgba(201,168,76,0.15)';" onmouseout="this.style.background='#C9A84C'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">Unlock the Free Calculator &rarr;</a>
+    <p style="margin-top: 20px; font-size: 0.85rem; color: #666; opacity: 0; animation: fadeUp 0.8s ease 1.0s forwards;"><strong style="color: #999;">5,000+</strong> service business owners have used this tool</p>
   </section>
 
-  <hr class="divider-gradient">
+  <hr style="height: 1px; border: none; margin: 0; background: linear-gradient(90deg, transparent, #2a2a2a 20%, #2a2a2a 80%, transparent);">
 
-  <!-- ==================== SECTION 1: VALUATION FORMULA ==================== -->
-  <section class="section">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-label">The Formula</span>
-        <h2 class="section-title">The Plumbing Valuation Formula</h2>
-        <p class="section-intro">Buyers don't care what you think your business is worth. They use one equation. Master it, or leave money on the table.</p>
+  <!-- ==================== THE 3 NUMBERS ==================== -->
+  <section style="padding: 80px 0;" class="section-desktop">
+    <div style="max-width: 720px; margin: 0 auto; padding: 0 24px;">
+      <div class="reveal" style="opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <span style="font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #C9A84C; margin-bottom: 20px; display: block;">The Formula</span>
+        <h2 style="font-weight: 800; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.12; letter-spacing: -0.035em; color: #f0f0f0; margin: 0 0 20px;">The 3 Numbers That Determine<br>Your Plumbing Company's Exit Price</h2>
+        <p style="font-size: 1.05rem; color: #999; max-width: 560px; line-height: 1.7; margin-bottom: 48px;">Forget what your accountant told you. Forget what your buddy sold his company for. PE buyers use one formula, and it comes down to three numbers.</p>
       </div>
 
-      <div class="stats-grid reveal">
-        <div class="stat-block">
-          <div class="stat-number">EBITDA</div>
-          <div class="stat-label">Your Adjusted Profit</div>
+      <div class="reveal" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 48px 0; opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 32px 20px; text-align: center;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: clamp(1.8rem, 4vw, 2.4rem); color: #C9A84C; line-height: 1.1; margin-bottom: 8px;">1</div>
+          <div style="font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #666;">Adjusted EBITDA</div>
         </div>
-        <div class="stat-block">
-          <div class="stat-number">&times;</div>
-          <div class="stat-label">Multiplied By</div>
+        <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 32px 20px; text-align: center;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: clamp(1.8rem, 4vw, 2.4rem); color: #C9A84C; line-height: 1.1; margin-bottom: 8px;">2</div>
+          <div style="font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #666;">Plumbing Multiple</div>
         </div>
-        <div class="stat-block">
-          <div class="stat-number">Multiple</div>
-          <div class="stat-label">Enterprise Value</div>
+        <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 32px 20px; text-align: center;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: clamp(1.8rem, 4vw, 2.4rem); color: #C9A84C; line-height: 1.1; margin-bottom: 8px;">3</div>
+          <div style="font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #666;">Risk Adjustments</div>
         </div>
       </div>
 
-      <div class="card card-elevated reveal">
-        <h3>Plumbing-Specific EBITDA Multiples</h3>
-        <p>Not all plumbing companies are valued the same. Your multiple depends on your size, structure, and revenue quality.</p>
+      <!-- EBITDA Explanation -->
+      <div class="reveal" style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 32px; margin-bottom: 20px; box-shadow: 0 4px 24px rgba(0,0,0,0.3), 0 1px 4px rgba(0,0,0,0.2); opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <h3 style="font-weight: 700; font-size: 1.25rem; letter-spacing: -0.02em; color: #f0f0f0; margin: 0 0 16px; line-height: 1.3;">Adjusted EBITDA (Your Profit After Expenses)</h3>
+        <p style="color: #999; margin-bottom: 16px;">Start with net profit. Add back your salary, interest, depreciation, amortization, and one-time expenses. That's your adjusted EBITDA - the number buyers actually care about.</p>
+        <p style="color: #666; font-size: 0.9rem; margin: 0;">Example: $600K net profit + $250K owner salary + $50K one-time legal fees = <strong style="color: #C9A84C;">$900K adjusted EBITDA</strong></p>
+      </div>
 
-        <div class="table-wrap">
-          <table class="data-table">
+      <!-- Plumbing Multiples Table -->
+      <div class="reveal" style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 32px; margin-bottom: 20px; box-shadow: 0 4px 24px rgba(0,0,0,0.3), 0 1px 4px rgba(0,0,0,0.2); opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <h3 style="font-weight: 700; font-size: 1.25rem; letter-spacing: -0.02em; color: #f0f0f0; margin: 0 0 16px; line-height: 1.3;">Plumbing-Specific Multiples by Revenue Tier</h3>
+        <p style="color: #999; margin-bottom: 16px;">Plumbing companies command a premium over many trades because of high demand, licensing barriers, and PE roll-up activity. But the multiple varies dramatically by size.</p>
+
+        <div style="margin: 28px 0; border: 1px solid #2a2a2a; border-radius: 2px; overflow: hidden;">
+          <table style="width: 100%; border-collapse: collapse;">
             <thead>
               <tr>
-                <th>Business Profile</th>
-                <th>EBITDA Multiple</th>
-                <th>What Drives It</th>
+                <th style="font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #666; background: #111; padding: 14px 16px; text-align: left; border-bottom: 1px solid #2a2a2a;">Revenue Tier</th>
+                <th style="font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #666; background: #111; padding: 14px 16px; text-align: left; border-bottom: 1px solid #2a2a2a;">EBITDA Multiple</th>
+                <th style="font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #666; background: #111; padding: 14px 16px; text-align: left; border-bottom: 1px solid #2a2a2a;">Why</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Solo operator</td>
-                <td class="mono" style="color: #999;">2 - 3x</td>
-                <td style="color: #666;">Owner IS the business</td>
+              <tr style="background: #141414;">
+                <td style="font-size: 0.95rem; color: #f0f0f0; padding: 14px 16px; border-bottom: 1px solid rgba(42,42,42,0.5);">Under $1M</td>
+                <td style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 0.95rem; color: #f0f0f0; padding: 14px 16px; border-bottom: 1px solid rgba(42,42,42,0.5);">2.0 - 3.0x</td>
+                <td style="font-size: 0.85rem; color: #666; padding: 14px 16px; border-bottom: 1px solid rgba(42,42,42,0.5);">High owner dependency, limited scale</td>
               </tr>
-              <tr>
-                <td>$1-3M revenue</td>
-                <td class="mono" style="color: #f0f0f0;">3 - 5x</td>
-                <td style="color: #666;">Small team, growing</td>
+              <tr style="background: #1a1a1a;">
+                <td style="font-size: 0.95rem; color: #f0f0f0; padding: 14px 16px; border-bottom: 1px solid rgba(42,42,42,0.5);">$1M - $3M</td>
+                <td style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 0.95rem; color: #f0f0f0; padding: 14px 16px; border-bottom: 1px solid rgba(42,42,42,0.5);">3.0 - 4.5x</td>
+                <td style="font-size: 0.85rem; color: #666; padding: 14px 16px; border-bottom: 1px solid rgba(42,42,42,0.5);">Growing, but still operator-led</td>
               </tr>
-              <tr>
-                <td>$3-5M revenue</td>
-                <td class="mono" style="color: #f0f0f0;">4 - 6x</td>
-                <td style="color: #666;">Management layer forming</td>
+              <tr style="background: #141414;">
+                <td style="font-size: 0.95rem; color: #f0f0f0; padding: 14px 16px; border-bottom: 1px solid rgba(42,42,42,0.5);">$3M - $5M</td>
+                <td style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 0.95rem; color: #34C759; padding: 14px 16px; border-bottom: 1px solid rgba(42,42,42,0.5);">4.0 - 5.5x</td>
+                <td style="font-size: 0.85rem; color: #666; padding: 14px 16px; border-bottom: 1px solid rgba(42,42,42,0.5);">PE-attractive size, management in place</td>
               </tr>
-              <tr>
-                <td>$5-10M revenue</td>
-                <td class="mono text-green">5 - 7x</td>
-                <td style="color: #666;">Real infrastructure</td>
+              <tr style="background: #1a1a1a;">
+                <td style="font-size: 0.95rem; color: #f0f0f0; padding: 14px 16px; border-bottom: 1px solid rgba(42,42,42,0.5);">$5M - $10M</td>
+                <td style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 0.95rem; color: #34C759; padding: 14px 16px; border-bottom: 1px solid rgba(42,42,42,0.5);">5.0 - 7.0x</td>
+                <td style="font-size: 0.85rem; color: #666; padding: 14px 16px; border-bottom: 1px solid rgba(42,42,42,0.5);">Plumbing premium - hot PE roll-up target</td>
               </tr>
-              <tr>
-                <td>$10M+ with recurring</td>
-                <td class="mono text-green">6 - 8x</td>
-                <td style="color: #666;">PE-ready platform</td>
+              <tr style="background: #141414;">
+                <td style="font-size: 0.95rem; color: #f0f0f0; padding: 14px 16px;">$10M+</td>
+                <td style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 0.95rem; color: #34C759; padding: 14px 16px;">6.0 - 8.0x</td>
+                <td style="font-size: 0.85rem; color: #666; padding: 14px 16px;">Platform deals, strategic acquirer interest</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p class="table-source">Source: GF Data, PitchBook, and publicly reported home services transactions (2023-2025). Multiples reflect enterprise value to EBITDA for plumbing businesses.</p>
+        <p style="font-size: 0.8rem; color: #666; margin: 12px 0 0; line-height: 1.5;">Source: GF Data, PitchBook, and publicly reported plumbing/mechanical transactions (2024-2025). Multiples reflect enterprise value to EBITDA.</p>
       </div>
 
-      <div class="card card-elevated reveal">
-        <h3>What Drives Your Multiple UP</h3>
-        <ul class="check-list">
-          <li><strong>Recurring service agreements</strong> - <span>Monthly or annual maintenance contracts create predictable cash flow. Buyers pay a premium for revenue they can count on.</span></li>
-          <li><strong>Multiple trucks and crews</strong> - <span>Capacity without the owner in a van. More trucks = more scale potential = higher multiple.</span></li>
-          <li><strong>Licensed technicians on staff</strong> - <span>Not subs. W-2 employees with plumbing licenses. Buyers want to know the workforce stays after closing.</span></li>
-          <li><strong>Documented SOPs</strong> - <span>Every job type, every process, written down. Dispatch, estimating, collections - all systematized.</span></li>
-          <li><strong>Low owner dependency</strong> - <span>You take 4 weeks off and the business doesn't skip a beat. This alone can add 1-2x to your multiple.</span></li>
+      <!-- Risk Adjustments -->
+      <div class="reveal" style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 32px; margin-bottom: 20px; box-shadow: 0 4px 24px rgba(0,0,0,0.3), 0 1px 4px rgba(0,0,0,0.2); opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <h3 style="font-weight: 700; font-size: 1.25rem; letter-spacing: -0.02em; color: #f0f0f0; margin: 0 0 16px; line-height: 1.3;">What Adjusts Your Multiple Up or Down</h3>
+        <p style="color: #999; margin-bottom: 16px;">This is where most plumbing company owners get surprised. Buyers stress-test everything that could go wrong after they write the check.</p>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="padding: 16px 0 16px 40px; position: relative; border-bottom: 1px solid rgba(42,42,42,0.6); color: #f0f0f0; font-size: 1rem; line-height: 1.65;"><span style="position: absolute; left: 0; top: 16px; color: #34C759; font-weight: 700;">&#9650;</span><strong>Service agreements 30%+</strong> - Adds up to 1.0x to your multiple. Predictable revenue = premium price.</li>
+          <li style="padding: 16px 0 16px 40px; position: relative; border-bottom: 1px solid rgba(42,42,42,0.6); color: #f0f0f0; font-size: 1rem; line-height: 1.65;"><span style="position: absolute; left: 0; top: 16px; color: #34C759; font-weight: 700;">&#9650;</span><strong>Commercial or mixed work</strong> - Commercial adds +0.5x. Mixed adds +0.25x. Bigger contracts, longer relationships.</li>
+          <li style="padding: 16px 0 16px 40px; position: relative; border-bottom: 1px solid rgba(42,42,42,0.6); color: #f0f0f0; font-size: 1rem; line-height: 1.65;"><span style="position: absolute; left: 0; top: 16px; color: #34C759; font-weight: 700;">&#9650;</span><strong>15+ licensed technicians</strong> - Adds up to +1.0x. Deep bench = lower risk for the buyer.</li>
+          <li style="padding: 16px 0 16px 40px; position: relative; border-bottom: 1px solid rgba(42,42,42,0.6); color: #f0f0f0; font-size: 1rem; line-height: 1.65;"><span style="position: absolute; left: 0; top: 16px; color: #FF3B30; font-weight: 700;">&#9660;</span><strong>Owner does estimates + sales</strong> - Drops your multiple by 1.0x. Revenue dies when you leave.</li>
+          <li style="padding: 16px 0 16px 40px; position: relative; color: #f0f0f0; font-size: 1rem; line-height: 1.65;"><span style="position: absolute; left: 0; top: 16px; color: #FF3B30; font-weight: 700;">&#9660;</span><strong>Few service agreements (&lt;10%)</strong> - Drops your multiple by 0.5x. All project revenue = unpredictable.</li>
         </ul>
       </div>
 
-      <div class="card card-elevated reveal">
-        <h3>What Kills Your Multiple</h3>
-        <ul class="x-list">
-          <li><strong>Owner does the selling</strong> - <span>If you're the one closing every deal and managing every key relationship, the business dies when you leave.</span></li>
-          <li><strong>Customer concentration</strong> - <span>If one builder or property manager accounts for more than 15-20% of revenue, buyers see a ticking time bomb.</span></li>
-          <li><strong>No maintenance contracts</strong> - <span>100% project-based revenue means zero predictability. That's the difference between 4x and 7x.</span></li>
-          <li><strong>No second-in-command</strong> - <span>No operations manager, no lead tech who can run jobs. Buyers need to see a team, not a one-man show.</span></li>
-        </ul>
-      </div>
-
-      <div class="card card-gold card-elevated reveal">
-        <h3>Quick Example: The $1.8M Difference</h3>
-        <div class="math-block">
-          Your plumbing company:<br>
-          Adjusted EBITDA: $1.2M<br>
-          10 trucks, 3 service agreements<br><br>
-
-          Scenario A: Owner-dependent, no recurring<br>
-          Multiple: 4.0x<br>
-          <span class="loss">Valuation: $4.8M</span><br><br>
-
-          Scenario B: Strong #2, 25% recurring<br>
-          Multiple: 5.5x<br>
-          <span class="result">Valuation: $6.6M</span><br><br>
-
-          <span class="highlight">Same EBITDA. $1.8M difference.</span>
+      <!-- Quick Example -->
+      <div class="reveal" style="background: linear-gradient(180deg, rgba(201,168,76,0.03) 0%, #1a1a1a 100%); border: 1px solid rgba(201,168,76,0.2); border-radius: 2px; padding: 32px; margin-bottom: 20px; box-shadow: 0 4px 24px rgba(0,0,0,0.3), 0 1px 4px rgba(0,0,0,0.2); opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <h3 style="font-weight: 700; font-size: 1.25rem; letter-spacing: -0.02em; color: #f0f0f0; margin: 0 0 16px; line-height: 1.3;">Quick Example</h3>
+        <div style="background: #111; border: 1px solid #2a2a2a; border-radius: 2px; padding: 28px; font-family: 'JetBrains Mono', monospace; font-size: 0.88rem; font-weight: 500; line-height: 2.1; color: #999;">
+          $7M plumbing company, 18% EBITDA margin<br>
+          Adjusted EBITDA: $1.26M<br>
+          Base multiple (plumbing, $5-10M tier): 6.0x<br><br>
+          Service agreements at 25%: +0.5x<br>
+          Mixed residential/commercial: +0.25x<br>
+          Owner still does sales: -1.0x<br>
+          8 licensed techs: +0.5x<br><br>
+          Adjusted multiple: 6.25x<br>
+          <span style="color: #34C759; font-size: 0.95rem;">Estimated value: $7.9M</span><br><br>
+          <span style="color: #f0f0f0; font-weight: 500;">But if the owner stepped back from sales?</span><br>
+          Multiple goes to 7.25x<br>
+          <span style="color: #34C759;">New value: $9.1M - that's $1.2M more.</span>
         </div>
       </div>
 
-      <div class="cta-inline reveal">
-        <a href="#get-training">Get My Free Valuation Guide &rarr;</a>
-        <p class="cta-inline-proof">Join 5,000+ plumbing owners who used this to increase their exit value</p>
+      <div class="reveal" style="text-align: center; margin: 48px 0 0; opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <a href="#get-calculator" style="display: inline-block; padding: 18px 40px; font-size: 1rem; font-weight: 700; color: #0a0a0a; background: #C9A84C; border-radius: 2px; text-decoration: none; transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease; cursor: pointer;" onmouseover="this.style.background='#D4B65C'; this.style.transform='translateY(-1px)'; this.style.boxShadow='0 12px 40px rgba(201,168,76,0.15)';" onmouseout="this.style.background='#C9A84C'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">Calculate Your Number for Free</a>
+        <p style="margin-top: 12px; font-size: 0.82rem; color: #555;">Takes 2 minutes. No sales call required.</p>
       </div>
-
     </div>
   </section>
 
-  <hr class="divider-gradient">
+  <hr style="height: 1px; border: none; margin: 0; background: linear-gradient(90deg, transparent, #2a2a2a 20%, #2a2a2a 80%, transparent);">
 
-  <!-- ==================== SECTION 2: PE FIRMS ==================== -->
-  <section class="section">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-label">The Buyers</span>
-        <h2 class="section-title">Why PE Firms Are Paying Premium for Plumbing Companies</h2>
-        <p class="section-intro">Private equity has discovered plumbing. The smart money is rolling up plumbing companies faster than any other trade. Here's what that means for your exit.</p>
+  <!-- ==================== WHY PLUMBING IS HOT ==================== -->
+  <section style="padding: 80px 0;">
+    <div style="max-width: 720px; margin: 0 auto; padding: 0 24px;">
+      <div class="reveal" style="opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <span style="font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #C9A84C; margin-bottom: 20px; display: block;">The Market</span>
+        <h2 style="font-weight: 800; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.12; letter-spacing: -0.035em; color: #f0f0f0; margin: 0 0 20px;">Why PE Firms Are Paying Premium for Plumbing Companies Right Now</h2>
+        <p style="font-size: 1.05rem; color: #999; max-width: 560px; line-height: 1.7; margin-bottom: 48px;">Plumbing is one of the hottest sectors in private equity. Here's why - and what it means for your exit price.</p>
       </div>
 
-      <div class="card card-elevated reveal">
-        <h3>The Real Numbers</h3>
-        <p>This isn't speculation. These are active buyers in the plumbing space right now:</p>
-        <div class="table-wrap">
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th>Buyer / Platform</th>
-                <th>Scale</th>
-                <th>Focus</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Wrench Group</td>
-                <td class="mono text-green">$14B+ portfolio</td>
-                <td style="color: #666;">HVAC + Plumbing roll-up</td>
-              </tr>
-              <tr>
-                <td>Apex Service Partners</td>
-                <td class="mono" style="color: #f0f0f0;">100+ acquisitions</td>
-                <td style="color: #666;">Multi-trade consolidation</td>
-              </tr>
-              <tr>
-                <td>Redwood Services</td>
-                <td class="mono" style="color: #f0f0f0;">Growth platform</td>
-                <td style="color: #666;">Plumbing + mechanical</td>
-              </tr>
-              <tr>
-                <td>Home Service Holdings</td>
-                <td class="mono" style="color: #f0f0f0;">Active acquirer</td>
-                <td style="color: #666;">Residential plumbing focus</td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="reveal" style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 32px; margin-bottom: 20px; box-shadow: 0 4px 24px rgba(0,0,0,0.3), 0 1px 4px rgba(0,0,0,0.2); opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <h3 style="font-weight: 700; font-size: 1.25rem; letter-spacing: -0.02em; color: #f0f0f0; margin: 0 0 16px; line-height: 1.3;">The Roll-Up Wave</h3>
+        <p style="color: #999; margin-bottom: 16px;">PE firms are aggressively buying plumbing companies and rolling them into platforms. Wrench Group, Apex Service Partners, and others have acquired hundreds of home service businesses. Plumbing is a priority because of licensing barriers (hard to start from scratch), essential-service demand (pipes break regardless of the economy), and fragmented markets (thousands of small operators to consolidate).</p>
+        <p style="color: #999; margin: 0;">This is driving multiples higher - but not for everyone. PE firms pay premium for companies that are <strong style="color: #f0f0f0;">already running like platforms</strong>: low owner dependency, recurring revenue, documented processes, and strong tech teams.</p>
+      </div>
+
+      <div class="reveal" style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 32px; margin-bottom: 20px; box-shadow: 0 4px 24px rgba(0,0,0,0.3), 0 1px 4px rgba(0,0,0,0.2); opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <h3 style="font-weight: 700; font-size: 1.25rem; letter-spacing: -0.02em; color: #f0f0f0; margin: 0 0 16px; line-height: 1.3;">The 3 Things That Kill Your Price</h3>
+        <p style="color: #999; margin-bottom: 16px;"><strong style="color: #f0f0f0;">Owner dependency.</strong> If you still do estimates, close every big deal, and handle escalations - a buyer sees a business that dies when you leave. That's a 1.0-1.5x multiple discount.</p>
+        <p style="color: #999; margin-bottom: 16px;"><strong style="color: #f0f0f0;">No recurring revenue.</strong> All project-based work? Every January starts at $0? That's a 0.5-1.0x discount. Service agreements change this overnight.</p>
+        <p style="color: #999; margin: 0;"><strong style="color: #f0f0f0;">Small tech team.</strong> 1-3 licensed technicians means the business can't absorb any turnover. Buyers discount for this because losing one tech could tank 30%+ of capacity.</p>
+      </div>
+
+      <div class="reveal" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 48px 0; opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 32px 20px; text-align: center;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: clamp(1.8rem, 4vw, 2.4rem); color: #C9A84C; line-height: 1.1; margin-bottom: 8px;">8.0x</div>
+          <div style="font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #666;">Top plumbing multiples</div>
         </div>
-        <p class="table-source">Source: Publicly reported transactions and company announcements, 2023-2025.</p>
+        <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 32px 20px; text-align: center;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: clamp(1.8rem, 4vw, 2.4rem); color: #FF3B30; line-height: 1.1; margin-bottom: 8px;">73%</div>
+          <div style="font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #666;">Get less than expected</div>
+        </div>
+        <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 32px 20px; text-align: center;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: clamp(1.8rem, 4vw, 2.4rem); color: #34C759; line-height: 1.1; margin-bottom: 8px;">2-3x</div>
+          <div style="font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #666;">Gap between prepared vs not</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr style="height: 1px; border: none; margin: 0; background: linear-gradient(90deg, transparent, #2a2a2a 20%, #2a2a2a 80%, transparent);">
+
+  <!-- ==================== THE EXERCISE ==================== -->
+  <section style="padding: 80px 0;">
+    <div style="max-width: 720px; margin: 0 auto; padding: 0 24px;">
+      <div class="reveal" style="opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <span style="font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #C9A84C; margin-bottom: 20px; display: block;">Self-Assessment</span>
+        <h2 style="font-weight: 800; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.12; letter-spacing: -0.035em; color: #f0f0f0; margin: 0 0 20px;">3 Questions That Predict Your Exit Price</h2>
+        <p style="font-size: 1.05rem; color: #999; max-width: 560px; line-height: 1.7; margin-bottom: 48px;">You can spend $15,000 on a formal valuation. Or use our free calculator that runs the same math PE firms use - customized for plumbing companies.</p>
       </div>
 
-      <div class="card card-elevated reveal">
-        <h3>Why Plumbing? Four Reasons.</h3>
-        <ol class="numbered-list">
-          <li>
-            <strong>Fragmented market</strong>
-            <span>There are over 120,000 plumbing businesses in the U.S. Most are under $5M revenue. PE firms see consolidation opportunity everywhere.</span>
-          </li>
-          <li>
-            <strong>Recurring revenue potential</strong>
-            <span>Drain cleaning, maintenance contracts, water heater replacements - plumbing has natural recurring revenue that most owners aren't capturing.</span>
-          </li>
-          <li>
-            <strong>Essential service</strong>
-            <span>People cut landscaping budgets. They don't skip fixing a burst pipe. Plumbing is recession-resistant by nature.</span>
-          </li>
-          <li>
-            <strong>Aging infrastructure</strong>
-            <span>U.S. water infrastructure is graded D+ by the American Society of Civil Engineers. Demand isn't going away for decades.</span>
-          </li>
+      <div class="reveal" style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 32px; margin-bottom: 20px; box-shadow: 0 4px 24px rgba(0,0,0,0.3), 0 1px 4px rgba(0,0,0,0.2); opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <ol style="list-style: none; padding: 0; margin: 0;">
+          <li style="padding: 24px 0 24px 60px; position: relative; border-bottom: 1px solid rgba(42,42,42,0.6);"><span style="position: absolute; left: 0; top: 24px; width: 40px; height: 40px; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.15); color: #C9A84C; font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 0.85rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">1</span><strong style="color: #f0f0f0; display: block; margin-bottom: 4px;">What percentage of your revenue comes from service agreements?</strong><span style="color: #666; font-size: 0.95rem;">Maintenance contracts, backflow testing, preventive service plans. Below 10% and you're leaving 0.5-1.0x on the table.</span></li>
+          <li style="padding: 24px 0 24px 60px; position: relative; border-bottom: 1px solid rgba(42,42,42,0.6);"><span style="position: absolute; left: 0; top: 24px; width: 40px; height: 40px; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.15); color: #C9A84C; font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 0.85rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">2</span><strong style="color: #f0f0f0; display: block; margin-bottom: 4px;">Can your business run for 4 weeks without you?</strong><span style="color: #666; font-size: 0.95rem;">Not "limp along." Actually dispatch trucks, quote jobs, close sales, handle callbacks. If no, that's a 20-40% discount.</span></li>
+          <li style="padding: 24px 0 24px 60px; position: relative;"><span style="position: absolute; left: 0; top: 24px; width: 40px; height: 40px; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.15); color: #C9A84C; font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 0.85rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">3</span><strong style="color: #f0f0f0; display: block; margin-bottom: 4px;">How many licensed technicians do you have?</strong><span style="color: #666; font-size: 0.95rem;">1-3 techs means one resignation could tank your capacity. 8+ signals a deep bench that buyers pay premium for.</span></li>
         </ol>
       </div>
 
-      <div class="card card-elevated reveal">
-        <h3>What This Means for You</h3>
-        <p>Average PE hold period: 3-5 years. They buy your plumbing company, combine it with others, improve operations, and sell the combined platform at a higher multiple.</p>
-        <p>More buyers means better prices for your business. But PE buyers are sophisticated. They've seen hundreds of deals. They know exactly what a plumbing company is worth - and what kills a deal.</p>
-        <p style="color: #666; font-size: 0.9rem;">The opportunity: <strong style="color: #34C759;">more competition for quality plumbing companies than at any point in history.</strong> But you have to be "quality" in their eyes, not just yours.</p>
-      </div>
-
-      <div class="stats-grid reveal">
-        <div class="stat-block">
-          <div class="stat-number">120K+</div>
-          <div class="stat-label">Plumbing companies in the U.S.</div>
-        </div>
-        <div class="stat-block">
-          <div class="stat-number">3-5yr</div>
-          <div class="stat-label">Avg PE hold period</div>
-        </div>
-        <div class="stat-block">
-          <div class="stat-number" style="color: #34C759;">D+</div>
-          <div class="stat-label">U.S. water infrastructure grade</div>
-        </div>
-      </div>
-
-      <div class="cta-inline reveal">
-        <a href="#get-training">Get My Free Valuation Guide &rarr;</a>
-        <p class="cta-inline-proof">Trusted by plumbing owners across 47 states</p>
+      <div class="reveal" style="opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <p style="color: #999; margin-bottom: 16px;">Stop guessing. Plug your actual numbers into the calculator and see exactly where your plumbing company stands - with plumbing-specific multiples and adjustments.</p>
       </div>
     </div>
   </section>
 
-  <hr class="divider-gradient">
+  <hr style="height: 1px; border: none; margin: 0; background: linear-gradient(90deg, transparent, #2a2a2a 20%, #2a2a2a 80%, transparent);">
 
-  <!-- ==================== SECTION 3: 3 THINGS THAT ADD $500K+ ==================== -->
-  <section class="section">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-label">The Leverage</span>
-        <h2 class="section-title">The 3 Things That Add $500K+ to Your Plumbing Company Exit</h2>
-        <p class="section-intro">Every one of these is fixable in 12-18 months. The free guide shows you exactly how - with real numbers and the exact playbook PE buyers use.</p>
+  <!-- ==================== EMAIL GATE FORM ==================== -->
+  <section id="get-calculator" style="padding: 100px 0 80px; position: relative;">
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.03) 0%, transparent 60%); pointer-events: none;"></div>
+    <div style="max-width: 720px; margin: 0 auto; padding: 0 24px;">
+      <div class="reveal" style="text-align: center; margin-bottom: 48px; opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <span style="font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: #C9A84C; margin-bottom: 20px; display: block;">Free Plumbing Valuation Calculator</span>
+        <h2 style="font-weight: 800; font-size: clamp(1.8rem, 4vw, 2.4rem); letter-spacing: -0.035em; line-height: 1.15; color: #f0f0f0; margin: 0 0 16px;">See What Your Plumbing Company Is Worth</h2>
+        <p style="font-size: 1.05rem; color: #999; max-width: 460px; margin: 0 auto; line-height: 1.6;">Plumbing-specific multiples. Real PE buyer math. Your number in 2 minutes.</p>
       </div>
 
-      <div class="card card-gold card-elevated reveal">
-        <h3>1. Revenue Quality Shift (Project to Recurring)</h3>
-        <p>Most plumbing companies run on project-based revenue - new construction, remodels, emergency calls. That revenue is worth 3-4x EBITDA.</p>
-        <p>Shift just 15-20% to recurring maintenance contracts - annual drain cleaning, water heater inspections, backflow testing - and you're looking at 5-6x.</p>
-        <p style="color: #666; font-size: 0.9rem;"><strong style="color: #C9A84C;">In the guide:</strong> The exact framework for launching a maintenance agreement program, including pricing, sales scripts, and the math that shows buyers you've figured it out.</p>
+      <!-- Objection strip -->
+      <div class="reveal" style="max-width: 480px; margin: 0 auto 24px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #666;"><span style="color: #34C759; font-size: 0.9rem;">&#10003;</span> Free - no credit card</div>
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #666;"><span style="color: #34C759; font-size: 0.9rem;">&#10003;</span> Instant access</div>
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: #666;"><span style="color: #34C759; font-size: 0.9rem;">&#10003;</span> No sales call</div>
       </div>
 
-      <div class="card card-gold card-elevated reveal">
-        <h3>2. Owner Dependency Reduction</h3>
-        <p>If you're still riding in the lead truck, quoting every job, and managing every tech - your business is worth 2-3x less than it should be.</p>
-        <p>The 4-week test: can your plumbing company operate for a full month without you touching it? If not, that's the gap between a $4M exit and a $7M exit.</p>
-        <p style="color: #666; font-size: 0.9rem;"><strong style="color: #C9A84C;">In the guide:</strong> The 12-month transition plan that gets you out of the truck and into a position where buyers see a company - not a job.</p>
-      </div>
+      <!-- FORM -->
+      <div class="reveal" style="background: #1a1a1a; border: 1px solid rgba(201,168,76,0.12); border-radius: 2px; padding: 48px 40px; max-width: 480px; margin: 0 auto; position: relative; box-shadow: 0 8px 40px rgba(0,0,0,0.3), 0 2px 8px rgba(0,0,0,0.2); opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <div style="position: absolute; top: -1px; left: 40px; right: 40px; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.35), transparent);"></div>
 
-      <div class="card card-gold card-elevated reveal">
-        <h3>3. Buyer-Ready Documentation</h3>
-        <p>PE firms don't just look at your P&L. They want to see: clean financials (3 years), employee certifications, customer contracts, fleet records, warranty claims, and documented SOPs for every job type.</p>
-        <p>Most plumbing owners have this information scattered across filing cabinets, their truck, and their head. Getting it organized and presentation-ready is worth six figures at exit.</p>
-        <p style="color: #666; font-size: 0.9rem;"><strong style="color: #C9A84C;">In the guide:</strong> The buyer's scorecard - the exact 6 factors PE firms evaluate, and how to score well on every one.</p>
-      </div>
-
-      <div class="cta-inline reveal">
-        <a href="#get-training">Get My Free Valuation Guide &rarr;</a>
-        <p class="cta-inline-proof">Join 5,000+ owners who used this to increase their exit value</p>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider-gradient">
-
-  <!-- ==================== FORM ==================== -->
-  <section id="get-training" class="form-section">
-    <div class="container">
-      <div class="form-header reveal">
-        <span class="form-header-label">Instant Access</span>
-        <h2>Get Your Free Plumbing Valuation Guide</h2>
-        <p>The 3 steps that increase your plumbing company's exit price - with real math, case studies, and the exact checklist PE buyers use.</p>
-      </div>
-
-      <div class="objection-strip reveal">
-        <div class="objection-item"><span class="icon">&#10003;</span> Free - no credit card</div>
-        <div class="objection-item"><span class="icon">&#10003;</span> Instant access</div>
-        <div class="objection-item"><span class="icon">&#10003;</span> No sales call required</div>
-      </div>
-
-      <div class="form-box reveal">
-        <form action="https://arena-api.jean-475.workers.dev/api/lead-capture" method="POST" id="plumbing-form">
+        <form action="https://arena-api.jean-475.workers.dev/api/lead-capture" method="POST" id="valuation-form">
           <input type="hidden" name="source" value="satellite-plumbing">
-          <input type="hidden" name="redirect" value="https://vivianashford.github.io/satellite-plumbing/training.html">
+          <input type="hidden" name="redirect" value="calculator.html">
 
-          <div class="form-group">
-            <label class="form-label" for="name">Your Name</label>
-            <input type="text" id="name" name="name" class="form-input" placeholder="John Smith" required autocomplete="name">
+          <div style="margin-bottom: 20px;">
+            <label for="email" style="display: block; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #999; margin-bottom: 8px;">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@company.com" required autocomplete="email" inputmode="email" style="width: 100%; min-height: 50px; padding: 14px 16px; font-family: 'Inter', sans-serif; font-size: 17px; color: #f0f0f0; background: #111; border: 1px solid #2a2a2a; border-radius: 2px; outline: none; transition: border-color 0.25s ease, box-shadow 0.25s ease; -webkit-appearance: none; appearance: none; box-sizing: border-box;" onfocus="this.style.borderColor='#C9A84C'; this.style.boxShadow='0 0 0 3px rgba(201,168,76,0.08)';" onblur="this.style.borderColor='#2a2a2a'; this.style.boxShadow='none';">
           </div>
 
-          <div class="form-group">
-            <label class="form-label" for="email">Email Address</label>
-            <input type="email" id="email" name="email" class="form-input" placeholder="john@company.com" required autocomplete="email">
-          </div>
+          <button type="submit" id="submit-btn" style="width: 100%; min-height: 56px; padding: 18px 32px; margin-top: 12px; font-family: 'Inter', sans-serif; font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; color: #0a0a0a; background: #C9A84C; border: none; border-radius: 2px; cursor: pointer; transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;" onmouseover="this.style.background='#D4B65C'; this.style.transform='translateY(-1px)'; this.style.boxShadow='0 12px 40px rgba(201,168,76,0.15)';" onmouseout="this.style.background='#C9A84C'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">Unlock the Free Calculator &rarr;</button>
 
-          <div class="form-group">
-            <label class="form-label" for="business_type">Business Type</label>
-            <select id="business_type" name="business_type" class="form-select" required>
-              <option value="Plumbing" selected>Plumbing</option>
-              <option value="HVAC">HVAC</option>
-              <option value="Electrical">Electrical</option>
-              <option value="Pest Control">Pest Control</option>
-              <option value="Landscaping">Landscaping</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="revenue">Approximate Annual Revenue</label>
-            <select id="revenue" name="revenue" class="form-select" required>
-              <option value="" disabled selected>Select revenue range</option>
-              <option value="Under $1M">Under $1M</option>
-              <option value="$1-3M">$1-3M</option>
-              <option value="$3-5M">$3-5M</option>
-              <option value="$5-10M">$5-10M</option>
-              <option value="$10-25M">$10-25M</option>
-              <option value="$25-50M">$25-50M</option>
-              <option value="$50M+">$50M+</option>
-            </select>
-            <p class="form-hint">So we can show you multiples relevant to your size. That's the only reason we ask.</p>
-          </div>
-
-          <button type="submit" class="form-submit" id="submit-btn">Get My Free Valuation Guide &rarr;</button>
-
-          <p class="form-micro"><span class="lock-icon">&#128274;</span> We'll never cold-call you or share your info. Ever.</p>
+          <p style="text-align: center; color: #555; font-size: 0.8rem; margin: 16px 0 0; line-height: 1.5;"><span style="display: inline-block; margin-right: 4px; font-size: 0.75rem;">&#128274;</span> Enter your email. Get instant access. No spam.</p>
         </form>
 
-        <p class="form-proof">Trusted by <strong>5,000+</strong> service business owners across 47 states</p>
+        <p style="text-align: center; color: #999; font-size: 0.85rem; margin-top: 24px; letter-spacing: 0.01em; padding-top: 20px; border-top: 1px solid #2a2a2a;"><strong style="color: #C9A84C;">5,000+</strong> service business owners have used this calculator</p>
       </div>
 
-      <div class="next-steps reveal">
-        <p class="next-steps-title">What happens next</p>
-        <div class="next-steps-list">
-          <div class="next-step"><span class="num">1</span> Instant access to the full guide</div>
-          <div class="next-step"><span class="num">2</span> Personalized to your revenue size</div>
-          <div class="next-step"><span class="num">3</span> Actionable steps you can take today</div>
+      <!-- What happens next -->
+      <div class="reveal" style="max-width: 480px; margin: 28px auto 0; text-align: center; opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease;">
+        <p style="font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: #666; margin-bottom: 16px;">What happens next</p>
+        <div style="display: flex; justify-content: center; gap: 32px; flex-wrap: wrap;">
+          <div style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #666;"><span style="width: 24px; height: 24px; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.15); color: #C9A84C; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</span> Enter your email</div>
+          <div style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #666;"><span style="width: 24px; height: 24px; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.15); color: #C9A84C; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</span> Use the calculator</div>
+          <div style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #666;"><span style="width: 24px; height: 24px; background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.15); color: #C9A84C; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</span> See your valuation</div>
         </div>
       </div>
-
     </div>
   </section>
 
   <!-- PRIDE CLOSE -->
-  <section class="pride-close">
-    <div class="container">
-      <p>You built something worth protecting. Make sure you get paid for it.</p>
-    </div>
+  <section style="padding: 64px 20px; text-align: center;">
+    <p style="color: #555; font-size: 1.1rem; font-style: italic; letter-spacing: -0.01em; font-weight: 400; margin: 0;">You built something worth protecting. Make sure you get paid for it.</p>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="footer-links">
-        <a href="https://thearenapartners.com">The Arena Partners</a>
-        <a href="https://thearenapartners.com/privacy">Privacy</a>
-      </div>
-      <p>&copy; 2026 The Arena Partners. All rights reserved.</p>
+  <footer style="padding: 48px 20px; text-align: center; color: #555; font-size: 0.8rem; border-top: 1px solid #2a2a2a;">
+    <div style="margin-bottom: 16px;">
+      <a href="https://thearenapartners.com" style="color: #555; text-decoration: none; margin: 0 16px; transition: color 0.2s ease;">The Arena Partners</a>
+      <a href="https://thearenapartners.com/privacy" style="color: #555; text-decoration: none; margin: 0 16px; transition: color 0.2s ease;">Privacy</a>
     </div>
+    <p style="margin: 0;">&copy; 2026 The Arena Partners. All rights reserved.</p>
   </footer>
 
   <!-- Sticky CTA (mobile only) -->
-  <div class="sticky-cta" id="sticky-cta">
-    <a href="#get-training">Get My Free Valuation Guide &rarr;</a>
+  <div id="sticky-cta" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; background: rgba(10,10,10,0.95); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-top: 1px solid rgba(201,168,76,0.15); padding: 12px 20px; text-align: center;">
+    <a href="#get-calculator" style="display: block; width: 100%; padding: 16px 24px; font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 700; color: #0a0a0a; background: #C9A84C; border-radius: 2px; text-decoration: none; box-sizing: border-box;">Unlock the Free Calculator &rarr;</a>
   </div>
+
+  <style>
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 600px) {
+      .section-desktop .reveal > div[style*="grid-template-columns: repeat(3"] { grid-template-columns: 1fr !important; }
+    }
+    @media (min-width: 601px) {
+      #sticky-cta { display: none !important; }
+    }
+  </style>
 
   <script>
     // Loading state on form submit
-    document.getElementById('plumbing-form').addEventListener('submit', function() {
+    document.getElementById('valuation-form').addEventListener('submit', function() {
       var btn = document.getElementById('submit-btn');
-      btn.textContent = 'Loading...';
+      btn.textContent = 'Unlocking...';
       btn.style.opacity = '0.7';
       btn.style.pointerEvents = 'none';
     });
@@ -1150,20 +383,33 @@
       els.forEach(function(el) { observer.observe(el); });
     })();
 
+    // Make reveal visible
+    document.head.insertAdjacentHTML('beforeend', '<style>.reveal.visible { opacity: 1 !important; transform: translateY(0) !important; }</style>');
+
     // Sticky CTA (show after scrolling past hero on mobile)
     (function() {
       var sticky = document.getElementById('sticky-cta');
-      var formSection = document.getElementById('get-training');
-      window.addEventListener('scroll', function() {
-        var scrollY = window.scrollY;
-        var formTop = formSection.getBoundingClientRect().top + window.scrollY;
-        var heroHeight = window.innerHeight;
-        if (scrollY > heroHeight && scrollY < formTop - window.innerHeight * 0.5) {
-          sticky.classList.add('visible');
-        } else {
-          sticky.classList.remove('visible');
-        }
-      });
+      var formSection = document.getElementById('get-calculator');
+      if (window.innerWidth <= 600) {
+        window.addEventListener('scroll', function() {
+          var scrollY = window.scrollY;
+          var formTop = formSection.getBoundingClientRect().top + window.scrollY;
+          var heroHeight = window.innerHeight;
+          if (scrollY > heroHeight && scrollY < formTop - window.innerHeight * 0.5) {
+            sticky.style.display = 'block';
+          } else {
+            sticky.style.display = 'none';
+          }
+        });
+      }
+    })();
+
+    // Mobile grid fix
+    (function() {
+      if (window.innerWidth <= 600) {
+        var grids = document.querySelectorAll('[style*="grid-template-columns: repeat(3"]');
+        grids.forEach(function(g) { g.style.gridTemplateColumns = '1fr'; });
+      }
     })();
   </script>
 

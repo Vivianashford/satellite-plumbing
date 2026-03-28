@@ -880,6 +880,7 @@
       <div class="footer-links">
         <a href="https://thearenapartners.com">The Arena Partners</a>
         <a href="index.html">Valuation Guide</a>
+        <a href="calculator.html">Calculator</a>
         <a href="https://thearenapartners.com/privacy">Privacy</a>
       </div>
       <p>&copy; 2026 The Arena Partners. All rights reserved.</p>
@@ -896,10 +897,11 @@
     (function() {
       var params = new URLSearchParams(window.location.search);
       var name = params.get('name');
+      var email = params.get('email');
       var revenue = params.get('revenue');
       var businessType = params.get('business_type');
 
-      if (name || revenue || businessType) {
+      if (name || email) {
         var el = document.getElementById('personalization');
         var text = document.getElementById('personalization-text');
         var parts = [];
@@ -914,6 +916,8 @@
           parts.push('Based on your <strong>' + businessType + '</strong> business, here\'s what matters most for your exit.');
         } else if (revenue) {
           parts.push('Based on your <strong>' + revenue + '</strong> revenue, here\'s what matters most for your exit.');
+        } else {
+          parts.push('You\'ve seen your valuation number. Here\'s how to increase it.');
         }
 
         if (parts.length > 0) {

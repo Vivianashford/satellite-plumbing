@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plumbing Business Valuation Calculator | Free Tool</title>
+  <meta name="description" content="Free plumbing business valuation calculator. Enter your revenue, EBITDA, and company details to see your estimated exit price using real PE buyer math.">
+  <link rel="canonical" href="https://vivianashford.github.io/satellite-plumbing/calculator.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Plumbing Business Valuation Calculator">
+  <meta property="og:description" content="See what your plumbing company is worth. Plumbing-specific multiples, real PE buyer math, instant results.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vivianashford.github.io/satellite-plumbing/calculator.html">
+  <meta property="og:site_name" content="The Arena Partners">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Plumbing Business Valuation Calculator",
+    "url": "https://vivianashford.github.io/satellite-plumbing/calculator.html",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Arena Partners",
+      "url": "https://thearenapartners.com"
+    }
+  }
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SDMM90P63D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SDMM90P63D');
+  </script>
+</head>
+<body style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #f0f0f0; line-height: 1.75; font-size: 17px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; margin: 0; padding: 0; overflow-x: hidden;">
+
+  <!-- ==================== PROGRESS INDICATOR ==================== -->
+  <div style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: #0a0a0a; border-bottom: 1px solid #1a1a1a; padding: 12px 24px;">
+    <div style="max-width: 600px; margin: 0 auto; display: flex; align-items: center; gap: 8px;">
+      <div id="prog-1" style="flex: 1; height: 3px; background: #C9A84C; border-radius: 2px; transition: background 0.3s ease;"></div>
+      <div id="prog-2" style="flex: 1; height: 3px; background: #2a2a2a; border-radius: 2px; transition: background 0.3s ease;"></div>
+      <div id="prog-3" style="flex: 1; height: 3px; background: #2a2a2a; border-radius: 2px; transition: background 0.3s ease;"></div>
+      <div id="prog-4" style="flex: 1; height: 3px; background: #2a2a2a; border-radius: 2px; transition: background 0.3s ease;"></div>
+      <div id="prog-5" style="flex: 1; height: 3px; background: #2a2a2a; border-radius: 2px; transition: background 0.3s ease;"></div>
+      <div id="prog-6" style="flex: 1; height: 3px; background: #2a2a2a; border-radius: 2px; transition: background 0.3s ease;"></div>
+      <div id="prog-7" style="flex: 1; height: 3px; background: #2a2a2a; border-radius: 2px; transition: background 0.3s ease;"></div>
+    </div>
+  </div>
+
+  <!-- ==================== CALCULATOR ==================== -->
+  <section style="min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 80px 20px 60px;">
+    <div style="max-width: 560px; width: 100%; margin: 0 auto;">
+
+      <!-- Header -->
+      <div style="text-align: center; margin-bottom: 48px;">
+        <span style="font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: #C9A84C; margin-bottom: 16px; display: block;">Plumbing Valuation Calculator</span>
+        <h1 style="font-weight: 900; font-size: clamp(1.8rem, 5vw, 2.8rem); line-height: 1.1; letter-spacing: -0.04em; color: #f0f0f0; margin: 0 0 12px;">Calculate Your Number</h1>
+        <p style="font-size: 1rem; color: #666; margin: 0;">Answer 7 questions. See your estimated valuation range.</p>
+      </div>
+
+      <!-- STEP 1: Company Type -->
+      <div id="step-1" class="calc-step" style="display: block;">
+        <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 40px 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.3);">
+          <label style="display: block; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #C9A84C; margin-bottom: 6px;">Step 1 of 7</label>
+          <h2 style="font-weight: 800; font-size: 1.4rem; letter-spacing: -0.03em; color: #f0f0f0; margin: 0 0 8px;">What type of plumbing company do you run?</h2>
+          <p style="color: #666; font-size: 0.9rem; margin: 0 0 24px;">This affects your base multiple and buyer pool.</p>
+
+          <div id="company-type-options" style="display: flex; flex-direction: column; gap: 12px;">
+            <button type="button" onclick="selectCompanyType(this, 'Residential Only')" style="width: 100%; text-align: left; padding: 18px 20px; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 500; color: #f0f0f0; background: #141414; border: 1px solid #2a2a2a; border-radius: 2px; cursor: pointer; transition: border-color 0.2s ease, background 0.2s ease; min-height: 48px;" onmouseover="if(!this.classList.contains('selected')){this.style.borderColor='#444';}" onmouseout="if(!this.classList.contains('selected')){this.style.borderColor='#2a2a2a';}">Residential Only</button>
+            <button type="button" onclick="selectCompanyType(this, 'Commercial Only')" style="width: 100%; text-align: left; padding: 18px 20px; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 500; color: #f0f0f0; background: #141414; border: 1px solid #2a2a2a; border-radius: 2px; cursor: pointer; transition: border-color 0.2s ease, background 0.2s ease; min-height: 48px;" onmouseover="if(!this.classList.contains('selected')){this.style.borderColor='#444';}" onmouseout="if(!this.classList.contains('selected')){this.style.borderColor='#2a2a2a';}">Commercial Only</button>
+            <button type="button" onclick="selectCompanyType(this, 'Mixed Residential/Commercial')" style="width: 100%; text-align: left; padding: 18px 20px; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 500; color: #f0f0f0; background: #141414; border: 1px solid #2a2a2a; border-radius: 2px; cursor: pointer; transition: border-color 0.2s ease, background 0.2s ease; min-height: 48px;" onmouseover="if(!this.classList.contains('selected')){this.style.borderColor='#444';}" onmouseout="if(!this.classList.contains('selected')){this.style.borderColor='#2a2a2a';}">Mixed Residential/Commercial</button>
+            <button type="button" onclick="selectCompanyType(this, 'New Construction Focus')" style="width: 100%; text-align: left; padding: 18px 20px; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 500; color: #f0f0f0; background: #141414; border: 1px solid #2a2a2a; border-radius: 2px; cursor: pointer; transition: border-color 0.2s ease, background 0.2s ease; min-height: 48px;" onmouseover="if(!this.classList.contains('selected')){this.style.borderColor='#444';}" onmouseout="if(!this.classList.contains('selected')){this.style.borderColor='#2a2a2a';}">New Construction Focus</button>
+            <button type="button" onclick="selectCompanyType(this, 'Service/Repair Focus')" style="width: 100%; text-align: left; padding: 18px 20px; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 500; color: #f0f0f0; background: #141414; border: 1px solid #2a2a2a; border-radius: 2px; cursor: pointer; transition: border-color 0.2s ease, background 0.2s ease; min-height: 48px;" onmouseover="if(!this.classList.contains('selected')){this.style.borderColor='#444';}" onmouseout="if(!this.classList.contains('selected')){this.style.borderColor='#2a2a2a';}">Service/Repair Focus</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 2: Annual Revenue -->
+      <div id="step-2" class="calc-step" style="display: none;">
+        <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 40px 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.3);">
+          <label style="display: block; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #C9A84C; margin-bottom: 6px;">Step 2 of 7</label>
+          <h2 style="font-weight: 800; font-size: 1.4rem; letter-spacing: -0.03em; color: #f0f0f0; margin: 0 0 8px;">What's your annual revenue?</h2>
+          <p style="color: #666; font-size: 0.9rem; margin: 0 0 24px;">Your revenue tier determines the base EBITDA multiple.</p>
+
+          <div style="position: relative;">
+            <span style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: #666; font-size: 1.1rem; font-weight: 600; pointer-events: none;">$</span>
+            <input type="text" id="revenue-input" inputmode="numeric" placeholder="5,000,000" style="width: 100%; min-height: 56px; padding: 16px 16px 16px 36px; font-family: 'JetBrains Mono', monospace; font-size: 1.2rem; font-weight: 500; color: #f0f0f0; background: #111; border: 1px solid #2a2a2a; border-radius: 2px; outline: none; transition: border-color 0.25s ease, box-shadow 0.25s ease; -webkit-appearance: none; appearance: none; box-sizing: border-box;" onfocus="this.style.borderColor='#C9A84C'; this.style.boxShadow='0 0 0 3px rgba(201,168,76,0.08)';" onblur="this.style.borderColor='#2a2a2a'; this.style.boxShadow='none';">
+          </div>
+
+          <button type="button" onclick="submitRevenue()" style="width: 100%; min-height: 56px; padding: 18px 32px; margin-top: 20px; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700; color: #0a0a0a; background: #C9A84C; border: none; border-radius: 2px; cursor: pointer; transition: background 0.2s ease, transform 0.15s ease;" onmouseover="this.style.background='#D4B65C'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='#C9A84C'; this.style.transform='translateY(0)';">Continue &rarr;</button>
+        </div>
+      </div>
+
+      <!-- STEP 3: EBITDA Margin -->
+      <div id="step-3" class="calc-step" style="display: none;">
+        <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 40px 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.3);">
+          <label style="display: block; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #C9A84C; margin-bottom: 6px;">Step 3 of 7</label>
+          <h2 style="font-weight: 800; font-size: 1.4rem; letter-spacing: -0.03em; color: #f0f0f0; margin: 0 0 8px;">What's your EBITDA margin?</h2>
+          <p style="color: #666; font-size: 0.9rem; margin: 0 0 24px;">Your profit margin after all expenses. Most plumbing companies run 12-22%.</p>
+
+          <div style="text-align: center; margin-bottom: 20px;">
+            <span id="ebitda-value" style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 2.4rem; color: #C9A84C;">15%</span>
+          </div>
+          <input type="range" id="ebitda-slider" min="5" max="30" value="15" step="1" style="width: 100%; height: 8px; -webkit-appearance: none; appearance: none; background: linear-gradient(to right, #C9A84C 0%, #C9A84C 40%, #2a2a2a 40%, #2a2a2a 100%); border-radius: 4px; outline: none; cursor: pointer;">
+          <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <span style="font-size: 0.8rem; color: #555;">5%</span>
+            <span style="font-size: 0.8rem; color: #555;">30%</span>
+          </div>
+
+          <button type="button" onclick="submitEbitda()" style="width: 100%; min-height: 56px; padding: 18px 32px; margin-top: 24px; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700; color: #0a0a0a; background: #C9A84C; border: none; border-radius: 2px; cursor: pointer; transition: background 0.2s ease, transform 0.15s ease;" onmouseover="this.style.background='#D4B65C'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='#C9A84C'; this.style.transform='translateY(0)';">Continue &rarr;</button>
+        </div>
+      </div>
+
+      <!-- STEP 4: Service Agreements -->
+      <div id="step-4" class="calc-step" style="display: none;">
+        <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 40px 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.3);">
+          <label style="display: block; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #C9A84C; margin-bottom: 6px;">Step 4 of 7</label>
+          <h2 style="font-weight: 800; font-size: 1.4rem; letter-spacing: -0.03em; color: #f0f0f0; margin: 0 0 8px;">What % of revenue is from service agreements?</h2>
+          <p style="color: #666; font-size: 0.9rem; margin: 0 0 24px;">Maintenance contracts, backflow testing, recurring service plans. This is the #1 multiple driver.</p>
+
+          <div style="text-align: center; margin-bottom: 20px;">
+            <span id="service-value" style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 2.4rem; color: #C9A84C;">10%</span>
+          </div>
+          <input type="range" id="service-slider" min="0" max="60" value="10" step="1" style="width: 100%; height: 8px; -webkit-appearance: none; appearance: none; background: linear-gradient(to right, #C9A84C 0%, #C9A84C 16.7%, #2a2a2a 16.7%, #2a2a2a 100%); border-radius: 4px; outline: none; cursor: pointer;">
+          <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+            <span style="font-size: 0.8rem; color: #555;">0%</span>
+            <span style="font-size: 0.8rem; color: #555;">60%</span>
+          </div>
+
+          <button type="button" onclick="submitService()" style="width: 100%; min-height: 56px; padding: 18px 32px; margin-top: 24px; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700; color: #0a0a0a; background: #C9A84C; border: none; border-radius: 2px; cursor: pointer; transition: background 0.2s ease, transform 0.15s ease;" onmouseover="this.style.background='#D4B65C'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='#C9A84C'; this.style.transform='translateY(0)';">Continue &rarr;</button>
+        </div>
+      </div>
+
+      <!-- STEP 5: Licensed Technicians -->
+      <div id="step-5" class="calc-step" style="display: none;">
+        <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 40px 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.3);">
+          <label style="display: block; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #C9A84C; margin-bottom: 6px;">Step 5 of 7</label>
+          <h2 style="font-weight: 800; font-size: 1.4rem; letter-spacing: -0.03em; color: #f0f0f0; margin: 0 0 8px;">How many licensed technicians?</h2>
+          <p style="color: #666; font-size: 0.9rem; margin: 0 0 24px;">Licensed plumbers and journeymen on staff. Deeper bench = lower risk for buyers.</p>
+
+          <input type="number" id="tech-input" min="1" max="100" placeholder="8" inputmode="numeric" style="width: 100%; min-height: 56px; padding: 16px; font-family: 'JetBrains Mono', monospace; font-size: 1.2rem; font-weight: 500; color: #f0f0f0; background: #111; border: 1px solid #2a2a2a; border-radius: 2px; outline: none; transition: border-color 0.25s ease, box-shadow 0.25s ease; -webkit-appearance: none; appearance: none; box-sizing: border-box;" onfocus="this.style.borderColor='#C9A84C'; this.style.boxShadow='0 0 0 3px rgba(201,168,76,0.08)';" onblur="this.style.borderColor='#2a2a2a'; this.style.boxShadow='none';">
+
+          <button type="button" onclick="submitTechs()" style="width: 100%; min-height: 56px; padding: 18px 32px; margin-top: 20px; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700; color: #0a0a0a; background: #C9A84C; border: none; border-radius: 2px; cursor: pointer; transition: background 0.2s ease, transform 0.15s ease;" onmouseover="this.style.background='#D4B65C'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='#C9A84C'; this.style.transform='translateY(0)';">Continue &rarr;</button>
+        </div>
+      </div>
+
+      <!-- STEP 6: Owner Role -->
+      <div id="step-6" class="calc-step" style="display: none;">
+        <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 40px 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.3);">
+          <label style="display: block; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #C9A84C; margin-bottom: 6px;">Step 6 of 7</label>
+          <h2 style="font-weight: 800; font-size: 1.4rem; letter-spacing: -0.03em; color: #f0f0f0; margin: 0 0 8px;">What's your role in the business?</h2>
+          <p style="color: #666; font-size: 0.9rem; margin: 0 0 24px;">Be honest. This is the single biggest multiple adjuster.</p>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <button type="button" onclick="selectOwnerRole(this, 'sales')" style="width: 100%; text-align: left; padding: 18px 20px; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 500; color: #f0f0f0; background: #141414; border: 1px solid #2a2a2a; border-radius: 2px; cursor: pointer; transition: border-color 0.2s ease, background 0.2s ease; min-height: 48px;" onmouseover="if(!this.classList.contains('selected')){this.style.borderColor='#444';}" onmouseout="if(!this.classList.contains('selected')){this.style.borderColor='#2a2a2a';}">
+              <strong>I do estimates + sales</strong><br><span style="color: #666; font-size: 0.85rem;">I'm in the field, quoting jobs, closing deals</span>
+            </button>
+            <button type="button" onclick="selectOwnerRole(this, 'manages')" style="width: 100%; text-align: left; padding: 18px 20px; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 500; color: #f0f0f0; background: #141414; border: 1px solid #2a2a2a; border-radius: 2px; cursor: pointer; transition: border-color 0.2s ease, background 0.2s ease; min-height: 48px;" onmouseover="if(!this.classList.contains('selected')){this.style.borderColor='#444';}" onmouseout="if(!this.classList.contains('selected')){this.style.borderColor='#2a2a2a';}">
+              <strong>I manage but make key decisions</strong><br><span style="color: #666; font-size: 0.85rem;">Team handles daily ops, I oversee strategy and big calls</span>
+            </button>
+            <button type="button" onclick="selectOwnerRole(this, 'handsoff')" style="width: 100%; text-align: left; padding: 18px 20px; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 500; color: #f0f0f0; background: #141414; border: 1px solid #2a2a2a; border-radius: 2px; cursor: pointer; transition: border-color 0.2s ease, background 0.2s ease; min-height: 48px;" onmouseover="if(!this.classList.contains('selected')){this.style.borderColor='#444';}" onmouseout="if(!this.classList.contains('selected')){this.style.borderColor='#2a2a2a';}">
+              <strong>Business runs without me</strong><br><span style="color: #666; font-size: 0.85rem;">I could take a month off and nothing would break</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 7: Trucks -->
+      <div id="step-7" class="calc-step" style="display: none;">
+        <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 40px 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.3);">
+          <label style="display: block; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #C9A84C; margin-bottom: 6px;">Step 7 of 7</label>
+          <h2 style="font-weight: 800; font-size: 1.4rem; letter-spacing: -0.03em; color: #f0f0f0; margin: 0 0 8px;">How many trucks/service vehicles?</h2>
+          <p style="color: #666; font-size: 0.9rem; margin: 0 0 24px;">Fleet size is a proxy for capacity and operational maturity.</p>
+
+          <input type="number" id="trucks-input" min="1" max="200" placeholder="12" inputmode="numeric" style="width: 100%; min-height: 56px; padding: 16px; font-family: 'JetBrains Mono', monospace; font-size: 1.2rem; font-weight: 500; color: #f0f0f0; background: #111; border: 1px solid #2a2a2a; border-radius: 2px; outline: none; transition: border-color 0.25s ease, box-shadow 0.25s ease; -webkit-appearance: none; appearance: none; box-sizing: border-box;" onfocus="this.style.borderColor='#C9A84C'; this.style.boxShadow='0 0 0 3px rgba(201,168,76,0.08)';" onblur="this.style.borderColor='#2a2a2a'; this.style.boxShadow='none';">
+
+          <button type="button" onclick="submitTrucks()" style="width: 100%; min-height: 56px; padding: 18px 32px; margin-top: 20px; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700; color: #0a0a0a; background: #C9A84C; border: none; border-radius: 2px; cursor: pointer; transition: background 0.2s ease, transform 0.15s ease;" onmouseover="this.style.background='#D4B65C'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='#C9A84C'; this.style.transform='translateY(0)';">See My Valuation &rarr;</button>
+        </div>
+      </div>
+
+      <!-- ==================== RESULTS ==================== -->
+      <div id="results" style="display: none;">
+
+        <!-- Valuation Range -->
+        <div style="background: linear-gradient(180deg, rgba(201,168,76,0.04) 0%, #1a1a1a 100%); border: 1px solid rgba(201,168,76,0.2); border-radius: 2px; padding: 48px 32px; text-align: center; position: relative; box-shadow: 0 8px 40px rgba(0,0,0,0.3); margin-bottom: 24px;">
+          <div style="position: absolute; top: -1px; left: 40px; right: 40px; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.35), transparent);"></div>
+          <span style="font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: #C9A84C; display: block; margin-bottom: 8px;">Your Estimated Valuation</span>
+          <div id="valuation-range" style="font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: clamp(2.2rem, 6vw, 3.4rem); color: #f0f0f0; margin: 16px 0 8px; letter-spacing: -0.02em;"></div>
+          <p id="valuation-ebitda" style="font-size: 0.95rem; color: #666; margin: 0 0 24px;"></p>
+
+          <!-- Visual Gauge -->
+          <div style="max-width: 400px; margin: 0 auto 24px;">
+            <div style="height: 12px; border-radius: 6px; background: linear-gradient(90deg, #FF3B30 0%, #FF9500 30%, #FFCC00 50%, #34C759 75%, #34C759 100%); position: relative;">
+              <div id="gauge-marker" style="position: absolute; top: -6px; width: 24px; height: 24px; background: #fff; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.4); transform: translateX(-50%); transition: left 0.8s ease;"></div>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+              <span style="font-size: 0.75rem; color: #555;">Below Market</span>
+              <span style="font-size: 0.75rem; color: #555;">Market</span>
+              <span style="font-size: 0.75rem; color: #555;">Premium</span>
+            </div>
+          </div>
+
+          <p id="comparison-text" style="font-size: 0.95rem; color: #999; margin: 0; padding: 20px 0 0; border-top: 1px solid #2a2a2a;"></p>
+        </div>
+
+        <!-- What's Driving Your Score -->
+        <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 32px; margin-bottom: 24px; box-shadow: 0 4px 24px rgba(0,0,0,0.3);">
+          <h3 style="font-weight: 700; font-size: 1.15rem; letter-spacing: -0.02em; color: #f0f0f0; margin: 0 0 20px;">What's Driving Your Score</h3>
+          <div id="adjustments-list" style="display: flex; flex-direction: column; gap: 12px;"></div>
+        </div>
+
+        <!-- Multiple Breakdown -->
+        <div style="background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 2px; padding: 32px; margin-bottom: 24px; box-shadow: 0 4px 24px rgba(0,0,0,0.3);">
+          <h3 style="font-weight: 700; font-size: 1.15rem; letter-spacing: -0.02em; color: #f0f0f0; margin: 0 0 20px;">Your Multiple Breakdown</h3>
+          <div id="multiple-breakdown" style="font-family: 'JetBrains Mono', monospace; font-size: 0.88rem; font-weight: 500; line-height: 2.2; color: #999; background: #111; border: 1px solid #2a2a2a; border-radius: 2px; padding: 24px;"></div>
+        </div>
+
+        <!-- Unlock Training Form -->
+        <div style="background: linear-gradient(180deg, rgba(201,168,76,0.03) 0%, #1a1a1a 100%); border: 1px solid rgba(201,168,76,0.15); border-radius: 2px; padding: 40px 32px; text-align: center; box-shadow: 0 8px 40px rgba(0,0,0,0.3); position: relative;">
+          <div style="position: absolute; top: -1px; left: 40px; right: 40px; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent);"></div>
+
+          <h3 style="font-weight: 800; font-size: 1.4rem; letter-spacing: -0.03em; color: #f0f0f0; margin: 0 0 8px;">Want to Increase That Number?</h3>
+          <p style="color: #999; font-size: 0.95rem; margin: 0 0 32px; max-width: 400px; margin-left: auto; margin-right: auto;">Get the free training: 3 steps that plumbing company owners use to add 1-2x to their multiple before selling.</p>
+
+          <form id="upgrade-form" style="max-width: 400px; margin: 0 auto;">
+            <input type="hidden" name="source" value="satellite-plumbing">
+            <input type="hidden" name="step" value="training-unlock">
+            <input type="hidden" name="redirect" value="training.html">
+            <input type="hidden" id="upgrade-email" name="email" value="">
+
+            <div style="margin-bottom: 12px;">
+              <label for="upgrade-name" style="display: block; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #999; margin-bottom: 6px; text-align: left;">Your Name</label>
+              <input type="text" id="upgrade-name" name="name" placeholder="John Smith" required autocomplete="name" style="width: 100%; min-height: 50px; padding: 14px 16px; font-family: 'Inter', sans-serif; font-size: 17px; color: #f0f0f0; background: #111; border: 1px solid #2a2a2a; border-radius: 2px; outline: none; transition: border-color 0.25s ease, box-shadow 0.25s ease; -webkit-appearance: none; appearance: none; box-sizing: border-box;" onfocus="this.style.borderColor='#C9A84C'; this.style.boxShadow='0 0 0 3px rgba(201,168,76,0.08)';" onblur="this.style.borderColor='#2a2a2a'; this.style.boxShadow='none';">
+            </div>
+
+            <div style="margin-bottom: 16px;">
+              <label for="upgrade-phone" style="display: block; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #999; margin-bottom: 6px; text-align: left;">Phone Number</label>
+              <input type="tel" id="upgrade-phone" name="phone" placeholder="(555) 123-4567" required autocomplete="tel" inputmode="tel" style="width: 100%; min-height: 50px; padding: 14px 16px; font-family: 'Inter', sans-serif; font-size: 17px; color: #f0f0f0; background: #111; border: 1px solid #2a2a2a; border-radius: 2px; outline: none; transition: border-color 0.25s ease, box-shadow 0.25s ease; -webkit-appearance: none; appearance: none; box-sizing: border-box;" onfocus="this.style.borderColor='#C9A84C'; this.style.boxShadow='0 0 0 3px rgba(201,168,76,0.08)';" onblur="this.style.borderColor='#2a2a2a'; this.style.boxShadow='none';">
+            </div>
+
+            <button type="submit" id="upgrade-btn" style="width: 100%; min-height: 56px; padding: 18px 32px; font-family: 'Inter', sans-serif; font-size: 1.05rem; font-weight: 700; color: #0a0a0a; background: #C9A84C; border: none; border-radius: 2px; cursor: pointer; transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;" onmouseover="this.style.background='#D4B65C'; this.style.transform='translateY(-1px)'; this.style.boxShadow='0 12px 40px rgba(201,168,76,0.15)';" onmouseout="this.style.background='#C9A84C'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">Get My Free Valuation Training &rarr;</button>
+
+            <p style="text-align: center; color: #555; font-size: 0.8rem; margin: 12px 0 0;">Free. No obligation. Instant access.</p>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="padding: 48px 20px; text-align: center; color: #555; font-size: 0.8rem; border-top: 1px solid #2a2a2a;">
+    <div style="margin-bottom: 16px;">
+      <a href="https://thearenapartners.com" style="color: #555; text-decoration: none; margin: 0 16px; transition: color 0.2s ease;">The Arena Partners</a>
+      <a href="index.html" style="color: #555; text-decoration: none; margin: 0 16px; transition: color 0.2s ease;">Valuation Guide</a>
+      <a href="https://thearenapartners.com/privacy" style="color: #555; text-decoration: none; margin: 0 16px; transition: color 0.2s ease;">Privacy</a>
+    </div>
+    <p style="margin: 0;">&copy; 2026 The Arena Partners. All rights reserved.</p>
+  </footer>
+
+  <!-- Slider thumb styles -->
+  <style>
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #C9A84C;
+      cursor: pointer;
+      border: 3px solid #0a0a0a;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    input[type="range"]::-moz-range-thumb {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #C9A84C;
+      cursor: pointer;
+      border: 3px solid #0a0a0a;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+    }
+  </style>
+
+  <script>
+    // State
+    var state = {
+      companyType: '',
+      revenue: 0,
+      ebitdaMargin: 15,
+      serviceAgreements: 10,
+      techs: 0,
+      ownerRole: '',
+      trucks: 0
+    };
+
+    // Get email from URL params
+    var params = new URLSearchParams(window.location.search);
+    var userEmail = params.get('email') || '';
+
+    // Revenue formatting
+    var revenueInput = document.getElementById('revenue-input');
+    revenueInput.addEventListener('input', function() {
+      var val = this.value.replace(/[^0-9]/g, '');
+      if (val) {
+        this.value = Number(val).toLocaleString('en-US');
+      }
+    });
+    revenueInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') { e.preventDefault(); submitRevenue(); }
+    });
+
+    // Tech input enter key
+    document.getElementById('tech-input').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') { e.preventDefault(); submitTechs(); }
+    });
+
+    // Trucks input enter key
+    document.getElementById('trucks-input').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') { e.preventDefault(); submitTrucks(); }
+    });
+
+    // EBITDA Slider
+    var ebitdaSlider = document.getElementById('ebitda-slider');
+    var ebitdaValue = document.getElementById('ebitda-value');
+    ebitdaSlider.addEventListener('input', function() {
+      ebitdaValue.textContent = this.value + '%';
+      var pct = ((this.value - 5) / 25) * 100;
+      this.style.background = 'linear-gradient(to right, #C9A84C 0%, #C9A84C ' + pct + '%, #2a2a2a ' + pct + '%, #2a2a2a 100%)';
+    });
+
+    // Service Slider
+    var serviceSlider = document.getElementById('service-slider');
+    var serviceValue = document.getElementById('service-value');
+    serviceSlider.addEventListener('input', function() {
+      serviceValue.textContent = this.value + '%';
+      var pct = (this.value / 60) * 100;
+      this.style.background = 'linear-gradient(to right, #C9A84C 0%, #C9A84C ' + pct + '%, #2a2a2a ' + pct + '%, #2a2a2a 100%)';
+    });
+
+    // Step navigation
+    function goToStep(n) {
+      var steps = document.querySelectorAll('.calc-step');
+      steps.forEach(function(s) { s.style.display = 'none'; });
+      var target = document.getElementById('step-' + n);
+      if (target) target.style.display = 'block';
+
+      // Update progress
+      for (var i = 1; i <= 7; i++) {
+        var prog = document.getElementById('prog-' + i);
+        prog.style.background = i <= n ? '#C9A84C' : '#2a2a2a';
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Step 1: Company Type
+    function selectCompanyType(btn, value) {
+      state.companyType = value;
+      var buttons = document.querySelectorAll('#company-type-options button');
+      buttons.forEach(function(b) {
+        b.style.borderColor = '#2a2a2a';
+        b.style.background = '#141414';
+        b.classList.remove('selected');
+      });
+      btn.style.borderColor = '#C9A84C';
+      btn.style.background = 'rgba(201,168,76,0.06)';
+      btn.classList.add('selected');
+      setTimeout(function() { goToStep(2); }, 300);
+    }
+
+    // Step 2: Revenue
+    function submitRevenue() {
+      var val = revenueInput.value.replace(/[^0-9]/g, '');
+      if (!val || Number(val) < 100000) {
+        revenueInput.style.borderColor = '#FF3B30';
+        return;
+      }
+      state.revenue = Number(val);
+      goToStep(3);
+    }
+
+    // Step 3: EBITDA
+    function submitEbitda() {
+      state.ebitdaMargin = Number(ebitdaSlider.value);
+      goToStep(4);
+    }
+
+    // Step 4: Service agreements
+    function submitService() {
+      state.serviceAgreements = Number(serviceSlider.value);
+      goToStep(5);
+    }
+
+    // Step 5: Techs
+    function submitTechs() {
+      var val = document.getElementById('tech-input').value;
+      if (!val || Number(val) < 1) {
+        document.getElementById('tech-input').style.borderColor = '#FF3B30';
+        return;
+      }
+      state.techs = Number(val);
+      goToStep(6);
+    }
+
+    // Step 6: Owner Role
+    function selectOwnerRole(btn, value) {
+      state.ownerRole = value;
+      var buttons = btn.parentElement.querySelectorAll('button');
+      buttons.forEach(function(b) {
+        b.style.borderColor = '#2a2a2a';
+        b.style.background = '#141414';
+        b.classList.remove('selected');
+      });
+      btn.style.borderColor = '#C9A84C';
+      btn.style.background = 'rgba(201,168,76,0.06)';
+      btn.classList.add('selected');
+      setTimeout(function() { goToStep(7); }, 300);
+    }
+
+    // Step 7: Trucks
+    function submitTrucks() {
+      var val = document.getElementById('trucks-input').value;
+      if (!val || Number(val) < 1) {
+        document.getElementById('trucks-input').style.borderColor = '#FF3B30';
+        return;
+      }
+      state.trucks = Number(val);
+      calculateValuation();
+    }
+
+    // ==================== CALCULATION ENGINE ====================
+    function calculateValuation() {
+      var revenue = state.revenue;
+      var ebitdaMargin = state.ebitdaMargin / 100;
+      var ebitda = revenue * ebitdaMargin;
+      var serviceAgreements = state.serviceAgreements;
+      var techs = state.techs;
+      var ownerRole = state.ownerRole;
+      var companyType = state.companyType;
+
+      // Base multiple by revenue tier
+      var baseLow, baseHigh;
+      if (revenue < 1000000) {
+        baseLow = 2.0; baseHigh = 3.0;
+      } else if (revenue < 3000000) {
+        baseLow = 3.0; baseHigh = 4.5;
+      } else if (revenue < 5000000) {
+        baseLow = 4.0; baseHigh = 5.5;
+      } else if (revenue < 10000000) {
+        baseLow = 5.0; baseHigh = 7.0;
+      } else {
+        baseLow = 6.0; baseHigh = 8.0;
+      }
+
+      var baseMid = (baseLow + baseHigh) / 2;
+      var adjustments = [];
+
+      // Service agreements adjustment
+      var serviceAdj = 0;
+      if (serviceAgreements < 10) {
+        serviceAdj = -0.5;
+        adjustments.push({ label: 'Service agreements under 10%', value: -0.5, type: 'negative', detail: 'Low recurring revenue signals unpredictable cash flow to buyers' });
+      } else if (serviceAgreements < 20) {
+        serviceAdj = 0;
+        adjustments.push({ label: 'Service agreements 10-20%', value: 0, type: 'neutral', detail: 'Average for plumbing - room to improve' });
+      } else if (serviceAgreements < 30) {
+        serviceAdj = 0.5;
+        adjustments.push({ label: 'Service agreements 20-30%', value: +0.5, type: 'positive', detail: 'Above-average recurring revenue - buyers value predictability' });
+      } else {
+        serviceAdj = 1.0;
+        adjustments.push({ label: 'Service agreements 30%+', value: +1.0, type: 'positive', detail: 'Strong recurring base - this alone can add $1M+ to your price' });
+      }
+
+      // Company type adjustment
+      var typeAdj = 0;
+      if (companyType === 'Commercial Only') {
+        typeAdj = 0.5;
+        adjustments.push({ label: 'Commercial specialization', value: +0.5, type: 'positive', detail: 'Larger contracts, longer relationships, less price sensitivity' });
+      } else if (companyType === 'Mixed Residential/Commercial') {
+        typeAdj = 0.25;
+        adjustments.push({ label: 'Mixed residential/commercial', value: +0.25, type: 'positive', detail: 'Diversified revenue streams reduce buyer risk' });
+      } else if (companyType === 'Residential Only') {
+        typeAdj = 0;
+        adjustments.push({ label: 'Residential only', value: 0, type: 'neutral', detail: 'Standard market rate - commercial work would boost your multiple' });
+      } else if (companyType === 'New Construction Focus') {
+        typeAdj = 0;
+        adjustments.push({ label: 'New construction focus', value: 0, type: 'neutral', detail: 'Cyclical risk - buyers prefer service/repair mix' });
+      } else {
+        typeAdj = 0;
+        adjustments.push({ label: 'Service/repair focus', value: 0, type: 'neutral', detail: 'Good foundation - add service agreements to boost further' });
+      }
+
+      // Tech count adjustment
+      var techAdj = 0;
+      if (techs <= 3) {
+        techAdj = -0.25;
+        adjustments.push({ label: '1-3 licensed technicians', value: -0.25, type: 'negative', detail: 'One resignation could tank 30%+ of capacity. Buyers discount for this.' });
+      } else if (techs <= 7) {
+        techAdj = 0;
+        adjustments.push({ label: '4-7 licensed technicians', value: 0, type: 'neutral', detail: 'Adequate bench depth for your size' });
+      } else if (techs <= 15) {
+        techAdj = 0.5;
+        adjustments.push({ label: '8-15 licensed technicians', value: +0.5, type: 'positive', detail: 'Deep bench - business can absorb turnover without revenue impact' });
+      } else {
+        techAdj = 1.0;
+        adjustments.push({ label: '15+ licensed technicians', value: +1.0, type: 'positive', detail: 'Platform-level team. This is what PE firms look for.' });
+      }
+
+      // Owner role adjustment
+      var ownerAdj = 0;
+      if (ownerRole === 'sales') {
+        ownerAdj = -1.0;
+        adjustments.push({ label: 'Owner does estimates + sales', value: -1.0, type: 'negative', detail: 'Revenue dies when you leave. This is the #1 multiple killer.' });
+      } else if (ownerRole === 'manages') {
+        ownerAdj = -0.5;
+        adjustments.push({ label: 'Owner manages key decisions', value: -0.5, type: 'negative', detail: 'Better than doing sales, but buyers still see transition risk' });
+      } else {
+        ownerAdj = 0.5;
+        adjustments.push({ label: 'Business runs without owner', value: +0.5, type: 'positive', detail: 'Premium positioning. Buyers pay top dollar for this.' });
+      }
+
+      var totalAdj = serviceAdj + typeAdj + techAdj + ownerAdj;
+      var adjustedMultiple = baseMid + totalAdj;
+
+      // Clamp to reasonable range
+      var minMultiple = Math.max(baseLow + totalAdj, 1.5);
+      var maxMultiple = Math.min(baseHigh + totalAdj, 10.0);
+      if (minMultiple > maxMultiple) { var temp = minMultiple; minMultiple = maxMultiple; maxMultiple = temp; }
+
+      var lowVal = ebitda * minMultiple;
+      var highVal = ebitda * maxMultiple;
+
+      // Sort adjustments: positives first, then neutral, then negative
+      adjustments.sort(function(a, b) {
+        var order = { positive: 0, neutral: 1, negative: 2 };
+        return order[a.type] - order[b.type];
+      });
+
+      // Show results
+      document.querySelectorAll('.calc-step').forEach(function(s) { s.style.display = 'none'; });
+      document.getElementById('results').style.display = 'block';
+
+      // Update progress bar to full
+      for (var i = 1; i <= 7; i++) {
+        document.getElementById('prog-' + i).style.background = '#C9A84C';
+      }
+
+      // Valuation range
+      document.getElementById('valuation-range').textContent = formatCurrency(lowVal) + ' - ' + formatCurrency(highVal);
+      document.getElementById('valuation-ebitda').innerHTML = 'Based on <strong style="color: #f0f0f0;">' + formatCurrency(ebitda) + '</strong> estimated EBITDA at <strong style="color: #f0f0f0;">' + minMultiple.toFixed(1) + 'x - ' + maxMultiple.toFixed(1) + 'x</strong> adjusted multiple';
+
+      // Gauge position (0-100%)
+      var gaugePosition = Math.min(Math.max(((adjustedMultiple - 2) / 6) * 100, 5), 95);
+      document.getElementById('gauge-marker').style.left = gaugePosition + '%';
+
+      // Comparison text
+      var compLow = formatCurrency(ebitda * baseLow);
+      var compHigh = formatCurrency(ebitda * baseHigh);
+      document.getElementById('comparison-text').innerHTML = 'Plumbing companies like yours sold for <strong style="color: #f0f0f0;">' + compLow + ' - ' + compHigh + '</strong> in 2024-2025 based on market data.';
+
+      // Adjustments list
+      var adjHtml = '';
+      adjustments.forEach(function(adj) {
+        var color = adj.type === 'positive' ? '#34C759' : adj.type === 'negative' ? '#FF3B30' : '#666';
+        var icon = adj.type === 'positive' ? '&#9650;' : adj.type === 'negative' ? '&#9660;' : '&#8212;';
+        var sign = adj.value > 0 ? '+' : '';
+        adjHtml += '<div style="display: flex; gap: 16px; padding: 16px; background: #141414; border: 1px solid #2a2a2a; border-radius: 2px;">';
+        adjHtml += '<div style="flex-shrink: 0; width: 48px; text-align: center;"><span style="font-family: \'JetBrains Mono\', monospace; font-weight: 500; font-size: 0.9rem; color: ' + color + ';">' + sign + adj.value.toFixed(1) + 'x</span></div>';
+        adjHtml += '<div><strong style="color: #f0f0f0; font-size: 0.95rem; display: block; margin-bottom: 2px;">' + adj.label + '</strong><span style="color: #666; font-size: 0.85rem;">' + adj.detail + '</span></div>';
+        adjHtml += '</div>';
+      });
+      document.getElementById('adjustments-list').innerHTML = adjHtml;
+
+      // Multiple breakdown
+      var breakdownHtml = '';
+      breakdownHtml += 'Revenue tier: ' + formatCurrencyShort(revenue) + '<br>';
+      breakdownHtml += 'EBITDA margin: ' + state.ebitdaMargin + '%<br>';
+      breakdownHtml += '<span style="color: #f0f0f0;">Estimated EBITDA: ' + formatCurrency(ebitda) + '</span><br><br>';
+      breakdownHtml += 'Base multiple range: ' + baseLow.toFixed(1) + 'x - ' + baseHigh.toFixed(1) + 'x<br>';
+      breakdownHtml += 'Service agreements: ' + (serviceAdj >= 0 ? '+' : '') + serviceAdj.toFixed(1) + 'x<br>';
+      breakdownHtml += 'Company type: ' + (typeAdj >= 0 ? '+' : '') + typeAdj.toFixed(1) + 'x<br>';
+      breakdownHtml += 'Tech count: ' + (techAdj >= 0 ? '+' : '') + techAdj.toFixed(1) + 'x<br>';
+      breakdownHtml += 'Owner role: ' + (ownerAdj >= 0 ? '+' : '') + ownerAdj.toFixed(1) + 'x<br>';
+      breakdownHtml += '<span style="color: #C9A84C;">Total adjustments: ' + (totalAdj >= 0 ? '+' : '') + totalAdj.toFixed(1) + 'x</span><br><br>';
+      breakdownHtml += '<span style="color: #34C759; font-size: 0.95rem;">Adjusted range: ' + minMultiple.toFixed(1) + 'x - ' + maxMultiple.toFixed(1) + 'x</span><br>';
+      breakdownHtml += '<span style="color: #f0f0f0; font-size: 1rem;">Estimated value: ' + formatCurrency(lowVal) + ' - ' + formatCurrency(highVal) + '</span>';
+      document.getElementById('multiple-breakdown').innerHTML = breakdownHtml;
+
+      // Set email on upgrade form
+      document.getElementById('upgrade-email').value = userEmail;
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // GA event
+      if (typeof gtag === 'function') {
+        gtag('event', 'calculator_complete', {
+          event_category: 'engagement',
+          event_label: state.companyType,
+          value: Math.round(ebitda)
+        });
+      }
+    }
+
+    function formatCurrency(num) {
+      if (num >= 1000000) {
+        return '$' + (num / 1000000).toFixed(1) + 'M';
+      }
+      return '$' + Math.round(num).toLocaleString('en-US');
+    }
+
+    function formatCurrencyShort(num) {
+      if (num >= 1000000) {
+        return '$' + (num / 1000000).toFixed(1) + 'M';
+      }
+      if (num >= 1000) {
+        return '$' + (num / 1000).toFixed(0) + 'K';
+      }
+      return '$' + num;
+    }
+
+    // Upgrade form submit
+    document.getElementById('upgrade-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = document.getElementById('upgrade-btn');
+      btn.textContent = 'Unlocking...';
+      btn.style.opacity = '0.7';
+      btn.style.pointerEvents = 'none';
+
+      var formData = {
+        source: 'satellite-plumbing',
+        step: 'training-unlock',
+        email: document.getElementById('upgrade-email').value || userEmail,
+        name: document.getElementById('upgrade-name').value,
+        phone: document.getElementById('upgrade-phone').value
+      };
+
+      fetch('https://arena-api.jean-475.workers.dev/api/lead-capture/upgrade', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      }).then(function() {
+        var redirectUrl = 'training.html';
+        if (formData.name) redirectUrl += '?name=' + encodeURIComponent(formData.name);
+        if (formData.email) redirectUrl += (redirectUrl.includes('?') ? '&' : '?') + 'email=' + encodeURIComponent(formData.email);
+        window.location.href = redirectUrl;
+      }).catch(function() {
+        // Redirect anyway on error
+        var redirectUrl = 'training.html';
+        var name = document.getElementById('upgrade-name').value;
+        if (name) redirectUrl += '?name=' + encodeURIComponent(name);
+        window.location.href = redirectUrl;
+      });
+    });
+  </script>
+
+</body>
+</html>

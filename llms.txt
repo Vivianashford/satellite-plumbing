@@ -1,0 +1,20 @@
+# Plumbing Business Valuation Guide
+> Published by The Arena Partners — helping service business owners exit on their terms.
+
+## About
+This site provides plumbing business owners with industry-specific valuation data, EBITDA multiples, and a free calculator to estimate their exit price. Created by Jean Louis Hardy, Exit Advisory at The Arena Partners.
+
+## Pages
+- [Plumbing Valuation Guide](https://vivianashford.github.io/satellite-plumbing/): Complete guide to plumbing business valuations with industry-specific multiples and buyer landscape analysis.
+- [Free Plumbing Calculator](https://vivianashford.github.io/satellite-plumbing/calculator.html): Interactive valuation calculator using real PE buyer math and plumbing-specific adjustments.
+- [Plumbing Exit Training](https://vivianashford.github.io/satellite-plumbing/training.html): 3-step training to increase your plumbing business value before selling.
+
+## Hub
+- [The Arena Partners](https://thearenapartners.com): Exit advisory for service business owners.
+- [Free Exit Risk Assessment](https://thearenapartners.com/assessment.html): 5-minute assessment to evaluate exit readiness.
+- [Full Valuation Calculator](https://thearenapartners.com/calculator.html): Cross-industry valuation tool.
+- [Exit Planning Guide](https://thearenapartners.com/book.html): The complete guide to planning your business exit.
+
+## Contact
+- Email: jean@thearenapartners.com
+- Website: https://thearenapartners.com
